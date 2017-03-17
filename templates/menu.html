@@ -1,8 +1,18 @@
-    <ol class="breadcrumb">
-        <li class="logo"><a href="{% url 'mainpage' %}">ITTAS</a></li>
+    <nav  class=" nim-menu navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'mainpage' %}">ITTAS</a>
+        </div>
 
-        <li class="pull-right"><a href="{% url 'contacts' %}">Контакты</a></li>
-        <li class="pull-right"><a href="#">Лаборатория</a></li>
-        <li class="pull-right"><a href="#">Компания</a></li>
-        <li class="pull-right"><a href="{% url 'mainpage' %}">Главная</a></li>
-    </ol>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="{% url 'mainpage' %}">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Лаборатория</a></li>
+              <li><a href="{% url 'contacts' %}">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
