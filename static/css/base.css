@@ -977,9 +977,50 @@ font-family: 'Roboto Slab', serif;
 .text-container {
     text-align: center;
 }
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	WE CAN HELP BLOCK
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+div.canhelp{
+    background-color: #e1e9ef;
+    padding: 10px 0 30px;
+}
 
+div.canhelp h2{
+    color:  #333;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding: 35px 0;
+}
 
+.icon{
+    max-height: 50px;
+}
 
+.canhelp .cards {
+   /* background-color: #ffffff;
+    min-height: 250px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
+.canhelp .cards a {
+    background-color: #ffffff;
+    display: block;
+    min-height: 250px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+}
 
+.canhelp .cards a:hover {
+    background-color: #333;
+    color: #FFFFFF;
+}
 
+.canhelp .cards a img {
+    margin-bottom: 20px;
+}
+
+.canhelp .cards a p {
+    text-align: center;
+}
