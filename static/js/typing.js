@@ -18,7 +18,7 @@ TxtType.prototype.tick = function() {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<div class="c-typing__text">'+this.txt+'</div>';
+    this.el.innerHTML = '<span class="c-typing__text">'+this.txt+'</span>';
 
     var that = this;
     var delta = 200 - Math.random() * 100;
