@@ -42,7 +42,7 @@ VERSION : 1.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
-
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	RESET
@@ -970,7 +970,8 @@ font-family: 'Roboto Slab', serif;
 .c-typing__text {
     padding-right: 10px;
     display: inline-block;
-    color: #f8198d;
+    //color: #f8198d;
+    color: #feba0f;
     text-shadow: rgba(0,0,0,0.498039) 2px 2px 2px;
 }
 
@@ -981,7 +982,7 @@ font-family: 'Roboto Slab', serif;
 	WE CAN HELP BLOCK
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 div.canhelp{
-    background-color: #e1e9ef;
+    background-color: #eee;
     padding: 10px 0 30px;
 }
 
@@ -995,6 +996,11 @@ div.canhelp h2{
 
 .icon{
     max-height: 50px;
+
+}
+
+a svg {
+    fill: #feba0f;
 }
 
 .canhelp .cards {
@@ -1024,3 +1030,47 @@ div.canhelp h2{
 .canhelp .cards a p {
     text-align: center;
 }
+
+.counter-bg {
+    background-image: url(../images/counter-bg.png);
+    text-align:center;
+}
+
+.counter-bg .count {
+    font-size: 62px;
+}
+
+.counter-title {
+    font-weight: 100;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    letter-spacing: 5px;
+}
+
+.counter-bg p {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+.counter-bg .center {
+
+}
+
+.confidence-bg {
+    background: url(../images/confidence.png) no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.confidence-hover {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 600px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
