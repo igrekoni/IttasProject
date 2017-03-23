@@ -1062,7 +1062,7 @@ a svg {
 .confidence-bg {
     background: url(../images/confidence.png) no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 603px;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -1070,7 +1070,33 @@ a svg {
 .confidence-hover {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 600px;
+    height: 603px;
+}
+
+.customers {
+    background: #FFFFFF;
+}
+
+.customers .row {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.customers .row img{
+    max-height: 150px;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.customers-bg {
+    background-color: #dcdcdc;
+}
+
+.customers-bg-2 {
+    background-color: #eeeeee;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////// */
