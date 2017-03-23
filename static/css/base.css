@@ -43,7 +43,7 @@ VERSION : 1.1
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	RESET
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -999,10 +999,6 @@ div.canhelp h2{
 
 }
 
-a svg {
-    fill: #feba0f;
-}
-
 .canhelp .cards {
    /* background-color: #ffffff;
     min-height: 250px;*/
@@ -1037,21 +1033,23 @@ a svg {
 }
 
 .counter-bg .count {
-    font-size: 62px;
+    font-size: 92px;
+    font-family: 'Unica One', cursive;
+    //color: #feba0f;
 }
 
 .counter-title {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 50px;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 30px;
     display: block;
     letter-spacing: 5px;
 }
 
 .counter-bg p {
-    font-family: 'Lobster', cursive;
-    font-size: 1.2em;
+    //font-family: 'Lobster', cursive;
+    font-size: 1.6em;
     padding-bottom: 20px;
 }
 
@@ -1073,6 +1071,26 @@ a svg {
     height: 603px;
 }
 
+.confidence-hover p {
+    margin-left: 15%;
+    padding-top: 15%;
+    font-size: 42px;
+    font-weight: 100;
+}
+
+.confidence-hover-add {
+    margin-left: 15%;
+    padding-top: 0px !important;
+    font-size: 52px;
+}
+
+.confidence-hover-add2 {
+    font-weight: 300 !important;
+    font-size: 92px !important;
+    color: #feba0f;
+    font-family: 'Unica One', cursive;
+}
+
 .customers {
     background: #FFFFFF;
 }
@@ -1083,6 +1101,50 @@ a svg {
     text-align: center;
     line-height: 150px;
 }
+
+.btn-company {
+    margin-left: 15%;
+    position: relative;
+    background-color: #feba0f;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+     cursor: pointer;
+     font-size:20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.btn-company:hover{
+   background:#fff;
+   box-shadow:0 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.btn-company:after {
+    content: "";
+    background: #feba0f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.btn-company:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
 
 .customers .row img{
     max-height: 150px;
