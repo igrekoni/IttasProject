@@ -4,14 +4,17 @@
     </div>
     <div class="col-sm-2">
         <span class="count">{{ newTime }}</span>
-        <br><p>года</p>
+        <br><p>{% if newTime <= 4 %}года{% else %}лет{% endif %}</p>
     </div>
     <div class="col-sm-2">
         <span class="count">{{ newMonth }}</span>
-        <br><p>месяцев</p>
+        <br><p>{% if newMonth == 0 %}месяцев
+            {% elif newMonth == 1 %}месяц{% elif newMonth == 2 or newMonth == 3 or newMonth == 4 %}месяца
+            {% else %}месяцев{% endif %}</p>
     </div>
     <div class="col-sm-2">
         <span class="count">{{ newDay }}</span>
-        <br><p>дней</p>
+        <br><p>{% if newDay == 1 or newDay == 21 or newDay == 31 %}день{% elif newDay == 2 or newDay == 3 or newDay == 4 or newDay == 22 or newDay == 23 or newDay == 24 %}дня
+            {% else %}дней{% endif %}</p>
     </div>
 </div>
