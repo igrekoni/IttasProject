@@ -14,20 +14,42 @@
 <body>
 <div class="wrapper">
     {% include "menu.html" %}
-    <div id="map_canvas"></div>
-    <iframe src="//mapkit.io/embed/0IahRF" frameborder="0" height="1000" width="100%"></iframe>
+    <div id="map" style="height: 600px;"></div>
     {% include "footer.html" %}
 
 
 
 </div>
-<!-- Скрипты --><script
+<!-- Скрипты -->
+    <script>
+      function initMap() {
+        var uluru = {lat: 53.901368, lng: 27.475729};
+        var work = {lat: 53.901368, lng: 27.477629};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru,
+          scrollwheel: false,
+          streetViewControl: false,
+          mapTypeControl: false,
+        });
+        var marker = new google.maps.Marker({
+          position: work,
+          map: map
+        });
+        var styles = [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}];
+        map.setOptions({styles: styles});
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLvTmhh6rDPJc2jXN5yqSuox6gmX-zfmI&callback=initMap">
+    </script>
+
+
+<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="/static/js/common.js" />
-
-
 </body>
 </html>
