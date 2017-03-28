@@ -967,12 +967,12 @@ font-family: 'Roboto Slab', serif;
   margin:  2em auto;
 }
 
-.c-typing__text {
+.textHere {
     padding-right: 10px;
     display: inline-block;
     //color: #f8198d;
-    color: #feba0f;
-    text-shadow: rgba(0,0,0,0.498039) 2px 2px 2px;
+    color: #feba0f !important;
+    text-shadow: rgba(0,0,0,0.498039) 2px 2px 2px !important;
 }
 
 .text-container {
@@ -1025,6 +1025,7 @@ div.canhelp h2{
 
 .canhelp .cards a p {
     text-align: center;
+    font-weight: 400;
 }
 
 .counter-bg {
