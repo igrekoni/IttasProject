@@ -990,7 +990,7 @@ div.canhelp h2{
     color:  #333;
     display: block;
     text-align: center;
-    font-size: 50px;
+    font-size: 1.8em;
     padding: 40px 0 60px;
 }
 
@@ -1233,8 +1233,85 @@ div.canhelp h2{
     vertical-align: middle;
 }
 
+/*    Products mainpage      */
+
 .products {
-    height: 600px;
+    padding-top: 70px;
 }
+
+.products h2 {
+    text-align: center;
+    color: #333;
+    display: block;
+    font-size: 1.8em;
+}
+
+.card-wrap {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  background: #fff;
+  overflow: visible;
+  margin: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.card:hover {
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.6);
+}
+
+.set-image {
+  width: 100%;
+  height: 40%;
+  //background: #eee;
+  overflow: hidden;
+  display: table;
+  font-weight: 400;
+
+}
+
+.set-image p {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 25px;
+      color: #feba0f;
+      font-size: 3em;
+      font-family: 'Lobster', cursive;
+      text-shadow: 1px 1px 1px black;
+}
+
+.set-text {
+    width: 100%;
+    padding: 0px 30px 20px 30px;
+    color: #333;
+    text-align: center;
+}
+
+.linked {
+    width: 300px;
+    height: 82px;
+    background: #feba0f;
+    vertical-align: middle;
+}
+
+.linked p {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.linked:hover {
+    background: #eaab0f;
+}
+
+
+
 
 /* /////////////////////////////////////////////////////////////////////////////// */
