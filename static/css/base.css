@@ -1205,11 +1205,15 @@ div.canhelp h2{
 }
 
 .footer-padd {
-    border-left: 1px  ridge #feba0f;
     height: 320px;
-    padding: 50px 0 0 2%;
+    padding-top: 30px;
 }
 
+.footer-line{
+    border-left: 1px  ridge #feba0f;
+    height: 262px;
+    padding: 30px 30px 30px 25%;
+}
 .footer-sub-menu {
     color: #feba0f;
     font-weight: 400;
@@ -1324,6 +1328,8 @@ div.canhelp h2{
 }
 
 .linked p {
+    display: block;
+    padding-top: 26px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
