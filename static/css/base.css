@@ -1026,6 +1026,7 @@ div.canhelp h2{
 .canhelp .cards a p {
     text-align: center;
     font-weight: 400;
+    padding: 0 20px 0 20px;
 }
 
 .counter-bg {
@@ -1237,7 +1238,6 @@ div.canhelp h2{
 .pt-bg {
     height: 500px;
     background: #c60c30;
-
 }
 
 .pt-text {
@@ -1311,7 +1311,7 @@ div.canhelp h2{
 
 .set-text {
     width: 100%;
-    padding: 0px 30px 20px 30px;
+    padding: 0 30px 20px 30px;
     color: #333;
     text-align: center;
 }
