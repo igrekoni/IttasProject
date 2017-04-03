@@ -1064,7 +1064,7 @@ div.canhelp h2{
     background: url(../images/confidence.png) no-repeat;
     background-size: cover;
     background-position-x: 50%;
-    height: 763px;
+    height: 685px;
     padding-right: 0;
     padding-left: 0;
 }
@@ -1072,7 +1072,7 @@ div.canhelp h2{
 .confidence-hover {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 763px;
+    height: 685px;
 }
 
 .confidence-hover p {
@@ -1097,7 +1097,7 @@ div.canhelp h2{
 
 .customers {
     background: #FFFFFF;
-    padding: 80px 45px 80px 45px;
+    padding: 40px 45px 40px 45px;
 }
 
 .customers .row {
@@ -1284,7 +1284,6 @@ div.canhelp h2{
   background: #fff;
   overflow: visible;
   margin: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: inline-block;
 }
 
