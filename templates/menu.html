@@ -16,12 +16,15 @@
           <ul class="nav navbar-nav navbar-right">
               <li><a href="{% url 'mainpage' %}">Главная</a></li>
               <li><a href="#">Компания</a></li>
-              <li><a href="#">Решения</a></li>
+              <li class ="parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Решения</a>
+                  <div id="solutions" class="dropdown-menu"></div>
+              </li>
               <li><a href="#">Лаборатория</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="{% url 'contacts' %}">Контакты</a></li>
           </ul>
         </div>
       </div>
+
     </nav>
 
