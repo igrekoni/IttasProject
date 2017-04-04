@@ -1064,7 +1064,7 @@ div.canhelp h2{
     background: url(../images/confidence.png) no-repeat;
     background-size: cover;
     background-position-x: 50%;
-    height: 685px;
+    height: 535px;
     padding-right: 0;
     padding-left: 0;
 }
@@ -1072,12 +1072,12 @@ div.canhelp h2{
 .confidence-hover {
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 685px;
+    height: 535px;
 }
 
 .confidence-hover p {
     margin-left: 15%;
-    padding-top: 15%;
+    padding-top: 10%;
     font-size: 42px;
     font-weight: 100;
 }
