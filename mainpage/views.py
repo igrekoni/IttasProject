@@ -13,4 +13,9 @@ def mainpage(request):
 
 def contacts(request):
 
-    return render(request, "contacts.html", {})
+    return render(request, "pages/contacts.html", {})
+
+
+def scna(request):
+
+    return render(request, "pages/scna.html", {})

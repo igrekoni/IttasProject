@@ -1380,4 +1380,43 @@ div.canhelp h2{
 
 
 
+/*//////////////// SCNA PAGE ////////////////*/
+.scna-header {
+    background: #fff;
+}
+
+.scna-header img {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.group {
+    background: #fff;
+    color: #1E2429;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.row.group {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.group p {
+    padding-top: 10px;
+}
+
+.group table {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+
+}
+
+.group table>tbody>tr>td {
+    line-height: 2.428571;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////// */
