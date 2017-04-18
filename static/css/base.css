@@ -446,9 +446,13 @@ li.parent{
     width: 750px;
     margin: 0 auto;
 }
+.parent #lab.dropdown-menu {
+    width: auto;
+    min-width: 860px;
+}
 #lab.dropdown-menu .inline-list{
     width: 830px;
-    margin: 0 auto;
+    float: right;
 }
 .dropdown-menu .inline-list li a{
     font-size: 18px;
