@@ -442,17 +442,19 @@ li.parent{
     vertical-align: middle;
 }
 
-.dropdown-menu .inline-list{
+#solutions.dropdown-menu .inline-list{
     width: 750px;
     margin: 0 auto;
-
-
+}
+#lab.dropdown-menu .inline-list{
+    width: 830px;
+    margin: 0 auto;
 }
 .dropdown-menu .inline-list li a{
     font-size: 18px;
     display: block;
     float: left;
-    padding: 20px 40px;
+    padding: 10px 40px;
     color: #FFFFFF;
 }
 
