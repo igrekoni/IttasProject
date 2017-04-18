@@ -39,3 +39,8 @@ def attestation(request):
 def sertification(request):
 
     return render(request, "pages/sertification.html", {})
+
+
+def ekspertiza(request):
+
+    return render(request, "pages/ekspertiza.html", {})

@@ -1,4 +1,4 @@
-from datetime import datetime, date
+from datetime import datetime
 from math import fabs
 
 

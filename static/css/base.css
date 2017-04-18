@@ -1416,7 +1416,7 @@ div.canhelp h2{
 }
 
 .row.group {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .group p {
@@ -1446,6 +1446,23 @@ div.canhelp h2{
     padding:0;
 }
 
+.goods {
+    font-weight: 300 !important;
+    font-size: 92px !important;
+    color: #feba0f;
+    font-family: 'Unica One', cursive;
+    margin: -50px 0 0 20px;
+}
+
+.p-goods {
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+.goods span{
+    font-size: 52px;
+    font-family: "Roboto", Verdana, Arial, sans-serif;
+}
 
 
 
