@@ -426,7 +426,8 @@ li.parent{
     border-radius:0;
     background: #31393e;
     width:100%;
-    height: 300px;
+    height: auto;
+
 }
 
 .caret-up {
@@ -440,11 +441,17 @@ li.parent{
     margin-left: 2px;
     vertical-align: middle;
 }
-/*#solutions{
-    width:100%;
-    height: 300px;
-    }
-*/
+
+.dropdown-menu .inline-list{
+    margin: 0 10%;
+    overflow: hidden;
+}
+.dropdown-menu .inline-list li a{
+    display: block;
+    float: left;
+    padding: 20px 40px;
+    color: #FFFFFF;
+}
 
 /*	MAIN HEADING
 ------------------------------*/
