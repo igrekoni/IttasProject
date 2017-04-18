@@ -24,3 +24,18 @@ def scna(request):
 def cna(request):
 
     return render(request, "pages/cna.html", {})
+
+
+def dkey(request):
+
+    return render(request, "pages/dkey.html", {})
+
+
+def attestation(request):
+
+    return render(request, "pages/attestation.html", {})
+
+
+def sertification(request):
+
+    return render(request, "pages/sertification.html", {})
