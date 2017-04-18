@@ -19,3 +19,8 @@ def contacts(request):
 def scna(request):
 
     return render(request, "pages/scna.html", {})
+
+
+def cna(request):
+
+    return render(request, "pages/cna.html", {})
