@@ -15,10 +15,23 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
               <li><a href="{% url 'mainpage' %}">Главная</a></li>
-              <li><a href="#">Компания</a></li>
+              <li class ="parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Компания<b class="caret"></b></a>
+                <div id="company" class="dropdown-menu">
+                      <div class="container">
+                      <ul class="inline-list ">
+                          <li><a href="#" >О компании</a></li>
+                          <li><a href="#" >Разработка ПО</a></li>
+                           <li><a href="#">Сопровождение ПО</a></li>
+                           <li><a href="#">Аудит систем безопасности</a></li>
+
+                      </ul>
+                      </div>
+                  </div>
+              </li>
               <li class ="parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Решения<b class="caret"></b></a>
                   <div id="solutions" class="dropdown-menu">
-                      <ul class="inline-list">
+                      <div class="container">
+                      <ul class="inline-list ">
                           <li><a href="/solutions/cna/" title="Client CNA">Client CNA</a></li>
                           <li><a href="/solutions/scna/" title="Server CNA">Server CNA</a></li>
                            <li><a href="#">D-key</a></li>
@@ -27,17 +40,20 @@
                            <!-- <li>itCNG</li> -->
 
                       </ul>
+                      </div>
                   </div>
               </li>
               <li class ="parent"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Лаборатория<b class="caret"></b></a>
                     <div id="lab" class="dropdown-menu">
-                      <ul class="inline-list">
+                        <div class="container">
+                      <ul   class="inline-list">
                           <li><a href="#">Область аккредитации</a></li>
                           <li><a href="#">Сертификация </a></li>
                           <li><a href="#">Аттестация </a></li>
                           <li><a href="#">Экспертиза </a></li>
 
                       </ul>
+                         </div>
                   </div>
               </li>
 

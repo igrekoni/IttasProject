@@ -442,13 +442,13 @@ li.parent{
     vertical-align: middle;
 }
 
-#solutions.dropdown-menu .inline-list{
-    width: 750px;
-    margin: 0 auto;
+#company.dropdown-menu .inline-list{
+   width: 950px;
+    float: right;
 }
-.parent #lab.dropdown-menu {
-    width: auto;
-    min-width: 860px;
+#solutions.dropdown-menu .inline-list{
+   width: 750px;
+    float: right;
 }
 #lab.dropdown-menu .inline-list{
     width: 830px;
