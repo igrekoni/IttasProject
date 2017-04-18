@@ -443,10 +443,13 @@ li.parent{
 }
 
 .dropdown-menu .inline-list{
-    margin: 0 10%;
-    overflow: hidden;
+    width: 60vw;
+    margin: 0 auto;
+    min-width: 715px;
+
 }
 .dropdown-menu .inline-list li a{
+    font-size: 18px;
     display: block;
     float: left;
     padding: 20px 40px;
