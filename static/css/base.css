@@ -100,7 +100,7 @@ h5{
 	line-height: 20px;
 }
 p{
-font-family: 'Open Sans', sans-serif;
+/*font-family: 'Open Sans', sans-serif;*/
 font-size:0.93em;
 }
 
@@ -1404,8 +1404,7 @@ div.canhelp h2{
 .scna-header img {
     padding-top: 150px;
     padding-bottom: 100px;
-    display: block;
-    margin: 0 auto;
+    width:100%;
 }
 
 .group {
@@ -1482,11 +1481,11 @@ div.canhelp h2{
     padding-top: 40px;
     padding-bottom: 20px;
 }
-.group.textdecor h1 {
+/*.group.textdecor h1 {
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
-}
+}*/
 
 h1.test{
     padding-top: 150px;
@@ -1494,6 +1493,12 @@ h1.test{
     color: #FFFFFF;
     background-color: #1E2429;
     text-align: center;
+}
+h1.test2{
+    padding: 150px 0 35px 45px;
+    color: #FFFFFF;
+    background-color: #1E2429;
+   margin-bottom: 40px;
 }
 .group2{
     padding-top: 40px !important;
