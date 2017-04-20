@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^laboratory/attestation/', views.attestation, name='attestation'),
     url(r'^laboratory/sertification/', views.sertification, name='sertification'),
     url(r'^laboratory/ekspertiza/', views.ekspertiza, name='ekspertiza'),
+    url(r'^laboratory/oblast-akkreditacii/', views.oblast, name='oblast-akkreditacii'),
 
 
 ]

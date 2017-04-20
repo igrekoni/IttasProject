@@ -44,3 +44,8 @@ def sertification(request):
 def ekspertiza(request):
 
     return render(request, "pages/ekspertiza.html", {})
+
+
+def oblast(request):
+
+    return render(request, "pages/oblast-akkreditacii.html", {})
