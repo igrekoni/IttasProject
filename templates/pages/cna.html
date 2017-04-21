@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="col-md-6">
-                        <p class="goods">Win Mac Linux icons here</p>
+                        <p class="goods"><img src="/static/images/pages/cna-os.png"/></p>
                         <p class="p-goods">совместимость co всеми основными ОС</p>
                     </div>
                     <div class="col-md-6">
@@ -39,11 +39,8 @@
             </div>
 
 
-            <div class="row group textdecor">
-
-                <div class="col-sm-10 col-sm-offset-1">
-                    <h2>Кому будет полезен</h2>
-                    <div class="col-sm-3">
+            <!-- <div class="row group"><h4 class="col-sm-12">Кому будет полезен</h4>
+                <div class="row"><div class="col-sm-2 col-sm-offset-1">
                     <ul>
                         <li>Службы безопасности</li>
                         <li>Оперативные службы</li>
@@ -61,13 +58,46 @@
                         <li>Органы государственного управления</li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <ul>
                         <li>Государственные учреждения</li>
                         <li>Медицинские учреждения</li>
                     </ul>
-                </div>
                 </div></div>
+            </div> -->
+
+            <div class="row group textdecor">
+                <h3 class="col-sm-12" style="text-align: center; margin-bottom: 50px;">Возможные схемы использования и подключения CNA</h3>
+                <div class="row">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <p>В настоящий момент, для создания защищенного соединения между 2-мя владельцами CNA необходимо, чтобы хотя бы один владелец CNA имел физический выделенный внешний IP-адрес.</p>
+                        <p>В дальнейшем за счет разработки сервера обмена зашифрованными дейтаграммами между владельцами CNA, данное ограничение планируется снять.</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <p>В текущей реализации возможны следующие схемы подключения для синхронизации ключевой информации между пользователями (владельцами CNA):</p>
+                        <ul>
+                            <li>точка-точка;</li>
+                            <li>точка - N точек или N точек - точка;</li>
+                            <li>через сервер ключевой информации.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                        <!-- ///////////////////// Slider ///////////////////////// -->
+                      <div class="schemas">
+                          <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image2.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image3.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image4.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image5.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image6.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image7.png"></div>
+                          <div class="slide"><img src="https://www.solodev.com/assets/carousel/image8.png"></div>
+                      </div>
+
+                            <!--/////////////////// End Slider///////////////////////////// -->
+                </div>
+            </div>
 
             <div class="row group">
                 <div class="col-sm-10 col-sm-offset-1">
@@ -145,7 +175,34 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+    $(document).ready(function(){
+			$('.schemas').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+</script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="/static/js/common.js" />
+
+
 </body>
 </html>
