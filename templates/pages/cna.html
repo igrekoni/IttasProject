@@ -22,7 +22,7 @@
             <div class="row group">
                 <div class="col-sm-5 col-sm-offset-1">
                     <h2>Назначение</h2>
-                    <p>Устройство обеспечивает конфиденциальность и контроль целостности данных, передаваемых по открытым каналам связи сетей общего пользования (в т.ч. при работе в публичных Internet сетях).</p>
+                    <p>Основное назначение устройства – персональная внешняя сетевая карта с функцией шифрования передаваемого траффика. Устройство обеспечивает конфиденциальность и контроль целостности данных, передаваемых по открытым каналам связи.</p>
                     <p>Используются алгоритмы шифрования и контроля целостности в соответствии с межгосударственным стандартом ГОСТ 28147-89 и стандартами Республики Беларусь.</p>
                     <p>При необходимости устройства можно настроить для работы в режиме сетевого экрана, при котором устройство будет передавать или пропускать только те пакеты, формат которых будет задан специальными масками и\или адресами.</p>
                 </div>
@@ -34,6 +34,10 @@
                     <div class="col-md-6">
                         <p class="goods">100<span>%</span></p>
                         <p class="p-goods">целостность криптоалгоритма</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="sec-goods">10 <span>Mb/c</span></p>
+                        <p class="p-goods">чистая скорость шифрования, что является уникальным показателем, учитывая минимальные размеры устройства</p>
                     </div>
                 </div>
             </div>
@@ -67,13 +71,14 @@
             </div> -->
 
             <div class="row group textdecor">
-                <h3 class="col-sm-12" style="text-align: center; margin-bottom: 50px;">Возможные схемы использования и подключения CNA</h3>
+                <h2 class="col-sm-12" style="text-align: center; margin-bottom: 20px;">Возможные схемы использования и подключения CNA</h2>
                 <div class="row">
-                    <div class="col-sm-5 col-sm-offset-1">
+                    <div class="col-sm-4 col-sm-offset-1">
                         <p>В настоящий момент, для создания защищенного соединения между 2-мя владельцами CNA необходимо, чтобы хотя бы один владелец CNA имел физический выделенный внешний IP-адрес.</p>
                         <p>В дальнейшем за счет разработки сервера обмена зашифрованными дейтаграммами между владельцами CNA, данное ограничение планируется снять.</p>
+                        <p>С помощью CNA возможно установление защищенного соединения совместно с применением VPN.</p>
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-4 col-sm-offset-1">
                         <p>В текущей реализации возможны следующие схемы подключения для синхронизации ключевой информации между пользователями (владельцами CNA):</p>
                         <ul>
                             <li>точка-точка;</li>
@@ -82,16 +87,13 @@
                         </ul>
                     </div>
                 </div>
-
-                        <!-- ///////////////////// Slider ///////////////////////// -->
-                      <div class="schemas">
-                          <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
-                          <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
-                          <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
-                      </div>
-
-                            <!--/////////////////// End Slider///////////////////////////// -->
-
+                <!-- ///////////////////// Slider ///////////////////////// -->
+                  <div class="schemas">
+                      <div class="slide"><img src="/static/images/schemas/schema1.png"><br><br><p style="text-align: center">Схема соединения с помощью VPN двух офисов (организаций) и применением CNA внутри туннеля</p></div>
+                      <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
+                      <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
+                  </div>
+                <!--/////////////////// End Slider///////////////////////////// -->
             </div>
 
             <div class="row group">
@@ -148,6 +150,15 @@
                 </div>
             </div>
 
+            <div class="row make-reserve">
+                <div class="col-md-5 col-md-offset-2">
+                    <p class="text-reserve">Мы предлагаем всем желающим заказать тестовые устройства абсолютно бесплатно чтобы в полной мере ощутить преимущества устройств CNA над конкурентами</p>
+                </div>
+                <div class="col-md-5">
+                    <button class="btn-company btn-company-yellow">ЗАКАЗАТЬ</button>
+                </div>
+            </div>
+
 
 
         </div>
@@ -178,17 +189,18 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: false,
-				dots: false,
+				dots: true,
+                dotsClass: 'slick-dots',
 					pauseOnHover: false,
 					responsive: [{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 3
+						slidesToShow: 1
 					}
 				}, {
 					breakpoint: 520,
 					settings: {
-						slidesToShow: 2
+						slidesToShow: 1
 					}
 				}]
 			});

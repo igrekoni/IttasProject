@@ -1449,7 +1449,20 @@ div.canhelp h2{
     font-size: 92px !important;
     color: #feba0f;
     font-family: 'Unica One', cursive;
-    margin: -50px 0 0 20px;
+    margin: -50px 0 -20px 20px;
+}
+
+.sec-goods {
+    font-weight: 300 !important;
+    font-size: 92px !important;
+    color: #feba0f;
+    font-family: 'Unica One', cursive;
+    margin: 0 0 -20px 20px;
+}
+
+.sec-goods span {
+    font-size: 52px;
+    font-family: "Roboto", Verdana, Arial, sans-serif;
 }
 
 .p-goods {
@@ -1504,7 +1517,34 @@ h1.test2{
 .group2{
     padding-top: 40px !important;
 }
+
+.make-reserve {
+    background: #000;
+    opacity: 0.3;
+}
+
+.text-reserve {
+    margin: 60px 25px 60px 25px;
+    color: #fff;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.make-reserve button {
+    margin: 70px 25px 50px 25px;
+}
 /* /////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+
 /* Slider */
 .slick-slide {
     margin: 0px 20px;
@@ -1634,4 +1674,35 @@ h1.test2{
 .schemas .slick-slide img {
     width:50%;
     margin: 0 auto;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0 !important;
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    padding: 5px !important;
+    cursor: pointer !important;
+    border: 0 !important;
+    outline: none !important;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center !important;
+}
+.slick-dots li {
+    position: relative !important;
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 5px !important;
+    padding: 0 !important;
+    cursor: pointer;
 }
