@@ -1630,3 +1630,8 @@ h1.test2{
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.schemas .slick-slide img {
+    width:80%;
+    margin: 0 auto;
+}
