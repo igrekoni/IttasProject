@@ -1519,14 +1519,14 @@ h1.test2{
 }
 
 .make-reserve {
-    background: #000;
-    opacity: 0.3;
+    background-image: url("/static/images/counter-bg.png");
 }
 
 .text-reserve {
     margin: 60px 25px 60px 25px;
     color: #fff;
     font-size: 24px;
+    text-align: left;
     text-align: justify;
 }
 
@@ -1669,6 +1669,10 @@ h1.test2{
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.schemas{
+    margin-top: 50px;
 }
 
 .schemas .slick-slide img {
