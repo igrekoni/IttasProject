@@ -1475,6 +1475,8 @@ div.canhelp h2{
 .group.textdecor ul li{
     padding-top: 10px;
     font-size: 0.88em;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 .group.textdecor h3 {
     padding-top: 40px;
