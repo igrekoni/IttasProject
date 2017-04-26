@@ -54,3 +54,18 @@ def oblast(request):
 def audit(request):
 
     return render(request, "pages/audit.html", {})
+
+
+def soprovozhdenie(request):
+
+    return render(request, "pages/soprovozhdenie-po.html", {})
+
+
+def razrabotka(request):
+
+    return render(request, "pages/razrabotka-po.html", {})
+
+
+def company(request):
+
+    return render(request, "pages/o-kompanii.html", {})

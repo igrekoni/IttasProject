@@ -18,6 +18,9 @@ urlpatterns = [
     url(r'^laboratory/oblast-akkreditacii/', views.oblast, name='oblast-akkreditacii'),
 
     url(r'^company/audit-is/', views.audit, name='audit-is'),
+    url(r'^company/soprovozhdenie-po/', views.soprovozhdenie, name='soprovozhdenie-po'),
+    url(r'^company/razrabotka-programmnogo-obespecheniya/', views.razrabotka, name='razrabotka-programmnogo-obespecheniya'),
+    url(r'^company/o-kompanii/', views.company, name='o-kompanii'),
 
 
 ]

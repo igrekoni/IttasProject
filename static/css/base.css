@@ -1243,7 +1243,7 @@ div.canhelp h2{
 }
 
 .customer-logos {
-    margin-top: 250px;
+
 }
 
 .vendors-padd {
@@ -1434,6 +1434,11 @@ div.canhelp h2{
     padding-bottom: 100px;
 }
 
+.group-lab {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
 .row.group {
     border-bottom: 1px solid #e2e2e2;
 }
@@ -1533,7 +1538,7 @@ div.canhelp h2{
  /*z-index: 2000;*/
 }
 .caption::before{
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   content: '';
   display: block;
   height: 100%;
@@ -1544,14 +1549,22 @@ div.canhelp h2{
 
 }
 .caption.expertiz {
-    background-image: url(../images/counter-bg.png);
+    background-image: url(../images/pages/expertize.png);
 }
 .caption.sert {
-    background-image: url(../images/counter-bg.png);
+    background-image: url(../images/pages/sertification.png);
 }
 .caption.attestation {
-    background-image: url(../images/counter-bg.png);
+    background-image: url(../images/pages/attestation.png);
 }
+.caption.obl-acr {
+    background-image: url(../images/pages/oblast.png);
+}
+.caption.audit {
+    background-image: url(../images/pages/audit.png);
+}
+
+
 
 /*.group2{
     padding-top: 40px !important;
@@ -1573,15 +1586,6 @@ div.canhelp h2{
     margin: 70px 25px 50px 25px;
 }
 /* /////////////////////////////////////////////////////////////////////////////// */
-
-
-
-
-
-
-
-
-
 
 
 /* Slider */
@@ -1763,4 +1767,24 @@ div.canhelp h2{
     font-size: 26px;
     font-weight: 300;
         position: absolute;
+}
+
+.sidebar-header {
+    background-color: #1E2429;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.sidebar-header p {
+    margin: 20px 0 0 15px;
+    padding-bottom: 10px !important;
+}
+
+.sidebar-body {
+    background-color: #eee;
+}
+
+.sidebar-body p {
+    margin: 0 0 0 15px;
 }
