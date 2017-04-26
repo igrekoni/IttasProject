@@ -462,6 +462,10 @@ li.parent{
     color: #FFFFFF;
 }
 
+.dropdown-menu .nav-mobile {
+    display: none;
+}
+
 /*	MAIN HEADING
 ------------------------------*/
 
@@ -1758,7 +1762,8 @@ div.canhelp h2{
     display: inline-block;
     position: absolute;
     z-index: 1;
-    width: 40%;
+    width: 35%;
+    margin-left: 10%;
     height: 550px;
     background-color: rgba(0,0,0,0.6);
 }
@@ -1766,7 +1771,13 @@ div.canhelp h2{
 .contacts h1 {
     font-size: 26px;
     font-weight: 300;
-        position: absolute;
+    padding: 75px 10%;
+
+}
+
+.contacts li{
+    padding-bottom: 30px;
+    padding-left: 10%;
 }
 
 .sidebar-header {
