@@ -1516,28 +1516,46 @@ div.canhelp h2{
     padding-top: 40px;
     padding-bottom: 20px;
 }
-/*.group.textdecor h1 {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    text-align: center;
-}*/
 
-h1.test{
+.caption{
     padding-top: 150px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     color: #FFFFFF;
-    background-color: #1E2429;
+    /*background-color: #1E2429;*/
     text-align: center;
+    position: relative;
+
 }
-h1.test2{
-    padding: 150px 0 35px 45px;
-    color: #FFFFFF;
-    background-color: #1E2429;
-   margin-bottom: 40px;
+.caption h1 {
+   position: absolute;
+    left:0;
+    right: 0;
+ /*z-index: 2000;*/
 }
-.group2{
+.caption::before{
+  background-color: rgba(0, 0, 0, 0.6);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top:0;
+  /*  z-index: 100;*/
+
+}
+.caption.expertiz {
+    background-image: url(../images/counter-bg.png);
+}
+.caption.sert {
+    background-image: url(../images/counter-bg.png);
+}
+.caption.attestation {
+    background-image: url(../images/counter-bg.png);
+}
+
+/*.group2{
     padding-top: 40px !important;
-}
+}*/
 
 .make-reserve {
     background-image: url("/static/images/counter-bg.png");
