@@ -1752,7 +1752,7 @@ div.canhelp h2{
 
 .contacts {
     display: inline-block;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     width: 40%;
     height: 550px;
