@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block head_title %}Ittas.by  - Разработка программного обеспечения и систем защиты под ключ{% endblock head_title%}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="wrapper">
+    {% include "menu.html" %}
+    <h1 class="test">Аудит информационных систем</h1>
+    <div class="row group group2 textdecor">
+        <div class="col-sm-8 col-sm-offset-2 ">
+            <p>С марта 2017 года компания ИТТАС получила эксклюзивное право на использование сертифицированного в Республике Беларусь средства контроля защищенности и анализа на наличие уязвимостей информационных систем.</p>
+            <p>Этот факт дает нам возможность оказывать услуги по проведению аудита информационной безопасности, сканированию локальных сетей на наличие уязвимостей и неизвестных хостов, сканированию и анализу отдельных узлов сети с оценкой используемого ПО, установленных патчей и его уязвимостей.</p>
+            <p>Самым важным фактом является возможность оценки состояния информационной системы на соответствие СТБ Республики Беларусь.</p>
+            <p>Имеющийся программный комплекс позволяет получать объективную оценку состояния защищенности, как всей информационной системы, так и отдельных подразделений, узлов, приложений. Механизмы тестирования на проникновение (Pentest), системных проверок (Audit) и контроля соответствия стандартам (Compliance) в сочетании с поддержкой анализа различных операционных систем, СУБД и Web-приложений обеспечивают непрерывный технический аудит безопасности на всех уровнях информационных систем.</p>
+            <p>По результатам аудита Заказчик получает отчет о состоянии своей системы, содержащий список известных уязвимостей, ссылки на их описание, а также рекомендации по устранению.</p>
+            <p>Система позволяет осуществлять контроль состояния защищенности и соответствия стандартам безопасности, благодаря чему становится возможным своевременное обнаружение уязвимостей в защищаемой системе и, следовательно, предотвращение атак с её использованием. Есть возможность установки встроенных в систему политик безопасности, чтобы оценить соответствие вашей системы основным стандартам (ISO 27001/27002, PCI DSS, NSA, NIST и CIS), а также специальные политики для контроля выполнения собственных корпоративных правил безопасности.</p>
+            <p>Процесс контроля (оценки) защищенности информационных систем включает в себя решение следующих задач:</p>
+            <ul>
+                <li>инвентаризация информационных активов;</li>
+                <li>оценка защищённости;</li>
+                <li>контроль соблюдения требований политик и стандартов безопасности.</li>
+            </ul>
+            <p>Процесс оценки вашей ИС может быть проведен удаленно – для этого нашим специалистам потребуется удаленный доступ к вашей системе. Если же доступ к ресурсам ограничен – наши специалисты приедут на вашу территорию со своей техникой и проведут аудит на месте.</p>
+            <p>Оценка результатов аудита для предоставления отчета заказчику может занимать от одной недели до одного месяца, подробности уточняйте при заключении договора.</p>
+            <p>Тарифы на наши услуги:</p>
+
+        </div>
+    </div>
+
+    {% include "footer.html" %}
+</div>
+<!-- Скрипты -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/static/js/common.js" />
+</body>
+</html>

@@ -17,5 +17,7 @@ urlpatterns = [
     url(r'^laboratory/ekspertiza/', views.ekspertiza, name='ekspertiza'),
     url(r'^laboratory/oblast-akkreditacii/', views.oblast, name='oblast-akkreditacii'),
 
+    url(r'^company/audit-is/', views.audit, name='audit-is'),
+
 
 ]

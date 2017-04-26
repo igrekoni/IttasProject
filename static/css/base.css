@@ -1242,6 +1242,14 @@ div.canhelp h2{
     background-color: #eeeeee;
 }
 
+.customer-logos {
+    margin-top: 250px;
+}
+
+.vendors-padd {
+    margin-top: 50px;
+}
+
 .footer {
     min-height: 320px;
     background: #1E2429;
@@ -1404,6 +1412,19 @@ div.canhelp h2{
 .scna-header img {
     padding-top: 150px;
     width:100%;
+}
+
+.cna-header {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    width:100%;
+    color: #1E2429;
+}
+
+.cna-h1 h1 {
+    font-weight: 300;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .group {
@@ -1713,14 +1734,15 @@ h1.test2{
 
 .contacts {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 40%;
-    height: 400px;
+    height: 550px;
     background-color: rgba(0,0,0,0.6);
 }
 
 .contacts h1 {
     font-size: 26px;
     font-weight: 300;
+        position: absolute;
 }

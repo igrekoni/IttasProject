@@ -49,3 +49,8 @@ def ekspertiza(request):
 def oblast(request):
 
     return render(request, "pages/oblast-akkreditacii.html", {})
+
+
+def audit(request):
+
+    return render(request, "pages/audit.html", {})
