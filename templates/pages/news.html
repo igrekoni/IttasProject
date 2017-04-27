@@ -15,15 +15,15 @@
 <body>
 <div class="wrapper">
     {% include "menu.html" %}
-
-        {% for obj in news_list %}
-            {{ obj.title }}<br>
-            {{ obj.content }}<br>
-            {{ obj.updated }}<br>
-            {{ obj.timestamp }}<br>
-            {{ obj.id }}<br>
-        {% endfor %}
-
+        <div class="col-md-8 col-md-offset-2 news-wrapper">
+            {% for obj in news_list %} <!-- {% url "news:news_detail" id=obj.id %} -->
+                <a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a><br>
+                {{ obj.content }}<br>
+                {{ obj.updated }}<br>
+                {{ obj.timestamp }}<br>
+                {{ obj.id }}<br>
+            {% endfor %}
+        </div>
     {% include "footer.html" %}
 </div>
 <!-- Скрипты -->

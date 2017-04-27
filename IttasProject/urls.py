@@ -7,7 +7,7 @@ urlpatterns = [
     url(r'^$', views.mainpage, name='mainpage'),
     url(r'^admin/', admin.site.urls),
     url(r'^contacts/', views.contacts, name='contacts'),
-    url(r'^news/', include("news.urls")),
+    url(r'^news/', include("news.urls", namespace='news')),
 
     url(r'^solutions/scna/', views.scna, name='scna'),
     url(r'^solutions/cna/', views.cna, name='cna'),

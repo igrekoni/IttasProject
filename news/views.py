@@ -8,8 +8,8 @@ def news_create(request):
     return HttpResponse("<p>create</p>")
 
 
-def news_detail(request):
-    instance = get_object_or_404(Post, id=1)
+def news_detail(request, id):
+    instance = get_object_or_404(Post, id=id)
     context = {
         "title": instance.title,
         "instance": instance,

@@ -16,11 +16,13 @@
 <div class="wrapper">
     {% include "menu.html" %}
 
+        <div class="col-md-8 col-md-offset-2 news-wrapper">
             {{ instance.title }}<br>
             {{ instance.content }}<br>
             {{ instance.updated }}<br>
             {{ instance.timestamp }}<br>
             {{ instance.id }}<br>
+        </div>
 
     {% include "footer.html" %}
 </div>
