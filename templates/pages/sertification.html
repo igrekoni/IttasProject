@@ -3,6 +3,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ittas.by - сертификация средств защиты информации и программного обеспечения в Республике Беларусь" />
     <title>{% block head_title %}Ittas.by  - Разработка программного обеспечения и систем защиты под ключ{% endblock head_title%}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -27,21 +28,26 @@
                         <p>Подтверждению соответствия требованиям информационной безопасности Технического регламента путем сертификации подлежат средства защиты информации, которые будут использоваться для:</p>
                     </div>
                     <div class="col-sm-4">
-                        <div class="sidebar-header">
-                            <p>Поделиться</p>
-                        </div>
-                        <div class="sidebar-body">
-                            <p>ew</p>
+
+                        <div class="">
+                            <div class="sidebar-header">
+                                <p>Поделиться</p>
+                            </div>
+                            <div class="sidebar-body">
+                                {% include "social.html" %}
+                            </div>
                         </div>
 
-                        <div class="sidebar-header">
-                            <p>Заказать звонок</p>
-                        </div>
-                        <div class="sidebar-body">
-                            <input placeholder="Меня зовут">
-                            <input placeholder="Меня интересует">
-                            <input placeholder="Мой телефон">
-                            <button>rere</button>
+                        <div class="sidebar-block">
+                            <div class="sidebar-header">
+                                <p>Заказать звонок</p>
+                            </div>
+                            <div class="sidebar-body">
+                                <input placeholder="Меня зовут">
+                                <input placeholder="Меня интересует">
+                                <input placeholder="Мой телефон">
+                                <button>rere</button>
+                            </div>
                         </div>
 
                     </div>

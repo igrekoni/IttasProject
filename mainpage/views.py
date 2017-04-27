@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from mainpage import utils
 
 
