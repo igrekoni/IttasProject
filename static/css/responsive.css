@@ -1,3 +1,8 @@
+@media (max-width: 480px){
+    body{
+        overflow-x: auto;
+    }
+}
 @media (max-width: 768px) {
     
     .nim-menu{
@@ -8,6 +13,10 @@
     }
     .dropdown-menu .inline-list {
         display: none;
+    }
+    .main-heading-title {
+
+	    font-size: 4vw;
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -30,7 +39,23 @@
     .main-heading-title {
 
 	font-size:1.6em;
+    }
+    .confidence-hover p {
+        font-size: 34px;
+        margin-left: 10%;
 
-
+    }
+    .btn-company-yellow{
+        margin-left: 10%;
+    }
 }
+@media (min-width: 992px) and (max-width: 1200px){
+    .confidence-hover p {
+        font-size: 36px;
+        margin-left: 10%;
+
+    }
+    .btn-company-yellow{
+        margin-left: 10%;
+    }
 }
