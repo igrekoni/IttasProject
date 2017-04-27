@@ -1,3 +1,14 @@
 from django.contrib import admin
+from .models import Post
 
-# Register your models here.
+
+class PostAdmin(admin.ModelAdmin):
+    list_display = ["__unicode__", "updated", "timestamp"]
+    list_display_links = ["__unicode__"]
+    list_filter = ["updated", "timestamp"]
+    search_fields = ["__unicode__", "content"]
+
+    class Meta:
+        model = Post
+
+admin.site.register(Post, PostAdmin)

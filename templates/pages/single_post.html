@@ -16,13 +16,11 @@
 <div class="wrapper">
     {% include "menu.html" %}
 
-        {% for obj in news_list %}
-            {{ obj.title }}<br>
-            {{ obj.content }}<br>
-            {{ obj.updated }}<br>
-            {{ obj.timestamp }}<br>
-            {{ obj.id }}<br>
-        {% endfor %}
+            {{ instance.title }}<br>
+            {{ instance.content }}<br>
+            {{ instance.updated }}<br>
+            {{ instance.timestamp }}<br>
+            {{ instance.id }}<br>
 
     {% include "footer.html" %}
 </div>
