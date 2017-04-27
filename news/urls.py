@@ -12,6 +12,6 @@ urlpatterns = [
     url(r'^$', news_list),
     url(r'^create/', news_create),
     url(r'^(?P<id>\d+)/$', news_detail, name='news_detail'),
-    url(r'^update/', news_update),
+    url(r'^(?P<id>\d+)/edit/', news_update, name='update'),
     url(r'^delete/', news_delete),
 ]
