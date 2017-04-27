@@ -466,6 +466,18 @@ li.parent{
     display: none;
 }
 
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+.dropdown-menu .nav-mobile > li{
+    padding-top: 10px;
+}
+
+.dropdown-menu .nav-mobile > li > a {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    padding-left:30px;
+}
 /*	MAIN HEADING
 ------------------------------*/
 
