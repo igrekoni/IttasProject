@@ -2,6 +2,10 @@
     body{
         overflow-x: auto;
     }
+    .main-heading-title {
+
+	    font-size: 19px !important;
+    }
 }
 @media (max-width: 768px) {
     
@@ -17,6 +21,15 @@
     .main-heading-title {
 
 	    font-size: 4vw;
+    }
+    .footer-line{
+        border-left: none;
+        border-top: 1px solid #feba0f;
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+    .footer-padd {
+        height: 290px;
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -48,6 +61,18 @@
     .btn-company-yellow{
         margin-left: 10%;
     }
+    .footer p {
+        font-size: 0.9em;
+    }
+    .footer li {
+        font-size: 0.7em;
+    }
+    .footer-padd {
+        height: 240px;
+    }
+    .footer {
+        min-height: 280px;
+    }
 }
 @media (min-width: 992px) and (max-width: 1200px){
     .confidence-hover p {
@@ -57,5 +82,9 @@
     }
     .btn-company-yellow{
         margin-left: 10%;
+    }
+
+    .canhelp .cards a p{
+        font-size: 0.8em;
     }
 }

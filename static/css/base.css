@@ -1081,7 +1081,7 @@ div.canhelp h2{
 .canhelp .cards a {
     background-color: #ffffff;
     display: block;
-    min-height: 275px;
+    min-height: 300px;
     padding-top: 30px;
     padding-bottom: 25px;
     text-align: -moz-center;
@@ -1179,7 +1179,9 @@ div.canhelp h2{
     text-align: center;
     line-height: 150px;
 }
-
+.customers .row > div{
+   max-height: 150px;
+}
 .btn-company {
     position: relative;
     background-color: transparent;
@@ -1286,14 +1288,18 @@ div.canhelp h2{
 }
 
 .footer-padd {
-    height: 320px;
+    height: 250px;
     padding-top: 30px;
+    overflow: hidden;
 }
 
 .footer-line{
     border-left: 1px  ridge #feba0f;
     height: 262px;
-    padding: 30px 30px 30px 10%;
+   /* padding: 30px 30px 30px 10%;*/
+    padding-left: 10%;
+    margin-top: 20px;
+
 }
 .footer-sub-menu {
     color: #feba0f;
