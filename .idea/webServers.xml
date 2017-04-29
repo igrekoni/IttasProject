@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d509f01d-c891-45fb-afbc-659884fbe4f9" name="ittas" url="http://vh81.hoster.by">
+        <fileTransfer host="vh81.hoster.by" port="21" rootFolder="/new" password="dfe5dfdfdfc9dfc2dfcbdfc3dfc2df9c" username="ittasby">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
