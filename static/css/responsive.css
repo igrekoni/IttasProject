@@ -31,6 +31,11 @@
     .footer-padd {
         height: 290px;
     }
+    .contacts {
+        margin-left: 0;
+        width: 55%;
+        font-size: 18px !important;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .container {
@@ -72,6 +77,10 @@
     }
     .footer {
         min-height: 280px;
+    }
+    .contacts {
+        margin-left: 0;
+        width: 45%;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px){
