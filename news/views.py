@@ -1,5 +1,6 @@
+from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from news.models import Post
 from .forms import PostForm
 
@@ -9,7 +10,10 @@ def news_create(request):
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
+        messages.success(request, "Запись успешно добавлена")
         return HttpResponseRedirect(instance.get_absolute_url())
+    # else:
+    #     messages.error(request, "Запись не создана. Проверьте логи.")
     context = {
         "form": form,
     }
@@ -40,6 +44,7 @@ def news_update(request, id=None):
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
+        messages.success(request, "Запись успешно обновлена")
         return HttpResponseRedirect(instance.get_absolute_url())
     context = {
         "title": instance.title,
@@ -49,7 +54,9 @@ def news_update(request, id=None):
     return render(request, "news_templates/form_post.html", context)
 
 
-def news_delete(request):
-
-    return HttpResponse("<p>delete</p>")
+def news_delete(request, id=None):
+    instance = get_object_or_404(Post, id=id)
+    instance.delete()
+    messages.success(request, "Запись удалена")
+    return redirect("news:list")
 
