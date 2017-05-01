@@ -3,17 +3,18 @@
 {% block content %}
     <div class="row group group-lab group2 textdecor">
         <div class="col-sm-8 col-sm-offset-2 " style="margin-top: 50px">
-        {% for obj in news_list %}
 
-            <div class="thumbnail">
-                <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a> <small>{{ obj.timestamp|timesince }} назад</small></h3>
-                {% if obj.image %}
-                    <img src="{{ obj.image.url }}" class="img-responsive" />
-                {% endif %}
-                <p>{{ obj.content|linebreaks|truncatewords:30 }}</p>
-                <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
-            </div>
-        {% endfor %}
+            {% for obj in news_list %}
+                <div class="thumbnail">
+                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a> <small>{{ obj.timestamp|timesince }} назад</small></h3>
+                    {% if obj.image %}
+                        <img src="{{ obj.image.url }}" class="img-responsive" />
+                    {% endif %}
+                    <p>{{ obj.content|linebreaks|truncatewords:30 }}</p>
+                    <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
+                </div>
+            {% endfor %}
+
         </div>
     </div>
 

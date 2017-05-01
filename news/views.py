@@ -8,22 +8,20 @@ from .forms import PostForm
 
 
 def news_create(request):
-    form = PostForm(request.POST or None, request.FILES or None, instance=instance)
+    form = PostForm(request.POST or None, request.FILES or None)
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
         messages.success(request, "Запись успешно добавлена")
         return HttpResponseRedirect(instance.get_absolute_url())
-    # else:
-    #     messages.error(request, "Запись не создана. Проверьте логи.")
     context = {
         "form": form,
     }
     return render(request, "news/form_post.html", context)
 
 
-def news_detail(request, id):
-    instance = get_object_or_404(Post, id=id)
+def news_detail(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
     context = {
         "title": instance.title,
         "instance": instance,
@@ -33,7 +31,7 @@ def news_detail(request, id):
 
 def news_list(request):
     queryset_list = Post.objects.all() #.order_by("-timestamp")
-    paginator = Paginator(queryset_list, 5) # Show 25 contacts per page
+    paginator = Paginator(queryset_list, 2) # Show 25 contacts per page
     page_request_var = 'page'
     page = request.GET.get(page_request_var)
     try:
@@ -51,9 +49,9 @@ def news_list(request):
     return render(request, "news/news_list.html", context)
 
 
-def news_update(request, id=None):
-    instance = get_object_or_404(Post, id=id)
-    form = PostForm(request.POST or None, instance=instance)
+def news_update(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
+    form = PostForm(request.POST or None, request.FILES or None, instance=instance)
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
@@ -67,8 +65,8 @@ def news_update(request, id=None):
     return render(request, "news/form_post.html", context)
 
 
-def news_delete(request, id=None):
-    instance = get_object_or_404(Post, id=id)
+def news_delete(request, slug=None):
+    instance = get_object_or_404(Post, slug=slug)
     instance.delete()
     messages.success(request, "Запись удалена")
     return redirect("news:list")
