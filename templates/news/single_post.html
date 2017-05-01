@@ -1,0 +1,16 @@
+{% extends "news/news.html" %}
+{% block head_title %}
+    {{ instance.title }} | Ittas.by
+{% endblock head_title%}
+
+{% block content %}
+    <div class="row group group-lab group2 textdecor">
+        <div class="col-sm-8 col-sm-offset-2 " style="margin-top: 50px">
+            <h1>{{ instance.title }} <small>{{ instance.timestamp|timesince }} назад</small></h1>
+            {% if instance.image %}
+                <img src="{{ instance.image.url }}" class="img-responsive" />
+            {% endif %}
+            {{ instance.content|linebreaks }}
+        </div>
+    </div>
+{% endblock %}

@@ -15,23 +15,10 @@
 <body>
 <div class="wrapper">
     {% include "menu.html" %}
+    {% include "news/messages.html" %}
 
-        <div class="col-md-8 col-md-offset-2 news-wrapper">
-
-            {% if messages %}
-            <ul class="messages">
-                {% for message in messages %}
-                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-
-            {{ instance.title }}<br>
-            {{ instance.content }}<br>
-            {{ instance.updated }}<br>
-            {{ instance.timestamp }}<br>
-            {{ instance.id }}<br>
-        </div>
+        {% block content %}
+        {% endblock content %}
 
     {% include "footer.html" %}
 </div>
