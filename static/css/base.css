@@ -1531,9 +1531,13 @@ div.canhelp h2{
     overflow: hidden;
 }
 
-.group.textdecor ul {
+.group.textdecor ul, .group.textdecor ol {
     font-size: 0.93em;
     text-align: justify;
+}
+
+.group.textdecor ol li{
+    padding-top: 10px;
 }
 .group.textdecor ul li{
     padding-top: 10px;
@@ -1553,12 +1557,15 @@ div.canhelp h2{
     /*background-color: #1E2429;*/
     text-align: center;
     position: relative;
+    margin-top: 70px;
+    background-position-x: 50%;
 
 }
 .caption h1 {
    position: absolute;
     left:0;
     right: 0;
+    top: 120px;
  /*z-index: 2000;*/
 }
 .caption::before{
