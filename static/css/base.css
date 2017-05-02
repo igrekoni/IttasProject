@@ -1587,6 +1587,12 @@ div.canhelp h2{
 .caption.audit {
     background-image: url(../images/pages/audit.png);
 }
+.caption.development {
+    background-image: url(../images/pages/development.png);
+}
+.caption.company {
+    background-image: url(../images/pages/company.png);
+}
 
 
 
@@ -1785,7 +1791,7 @@ div.canhelp h2{
     width: 35%;
     margin-left: 10%;
     height: 550px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .contacts h1 {

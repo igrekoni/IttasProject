@@ -2,17 +2,26 @@
 
 {% block content %}
     <div class="row group group-lab group2 textdecor">
-        <div class="col-sm-8 col-sm-offset-2 " style="margin-top: 50px">
-
+        <div class="col-sm-6 col-sm-offset-3 " style="margin-top: 50px">
+{# эта форма нихера не работает с юникодом. нужно поробовать через приведение к юникоду всех переменных решить этот косяк #}
+{#            <form method="get" action="">#}
+{#                <input type="text" name="search" placeholder="Поиск по новостям" value="{{ request.GET.search }}" />#}
+{#                <input type="submit" value="Искать" />#}
+{#            </form>#}
             {% for obj in news_list %}
                 <div class="thumbnail">
-                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a> <small>{{ obj.timestamp|timesince }} назад</small></h3>
+                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a> <small>{{ obj.publish }}</small> {% if obj.draft %}Черновик{% endif %}</h3>
                     {% if obj.image %}
                         <img src="{{ obj.image.url }}" class="img-responsive" />
                     {% endif %}
                     <p>{{ obj.content|linebreaks|truncatewords:30 }}</p>
                     <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
                 </div>
+{#                <div class="row">#}
+{#                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://new.ittas.by{{ obj.get_absolute_url }}&title=Be%20first%20%7C%20Join%20Swift%20for%20Entrepreneurs&summary=Swift%20for%20Entrepreneurs%20is%20a%20project-based%20programming%20course%20for%20non-technical%20founders.%20We'll%20learn%20how%20to%20build%20iOS%20apps%20from%20scratch%20using%20Apple's%20new%20programming%20language:%20Swift.%20Be%20first%20and%20learn%20with%20me!&source=http://swiftforentrepreneurs.com/">Linkedin</a>#}
+{#                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://new.ittas.by{{ obj.get_absolute_url }}">Facebook</a>#}
+{#                    <a href="https://twitter.com/home?status=I'm%20going%20to%20learn%20to%20Code...%20Come%20build%20an%20web%20apsp%20with%20me!%20%23CFE%20and%20@justinmitchel%20http://new.ittas.by{{ obj.get_absolute_url }}">Twitter</a>#}
+{#                </div>#}
             {% endfor %}
 
         </div>
@@ -21,7 +30,7 @@
     <div class="pagination">
         <span class="step-links">
             {% if news_list.has_previous %}
-                <a href="?{{ page_request_var }}={{ news_list.previous_page_number }}">Назад</a>
+                <a href="?{{ page_request_var }}={{ news_list.previous_page_number }}{% if request.GET.search %}&q={{ request.GET.q }}{% endif %}">Назад</a>
             {% endif %}
 
             <span class="current">
@@ -29,7 +38,7 @@
             </span>
 
             {% if news_list.has_next %}
-                <a href="?{{ page_request_var }}={{ news_list.next_page_number }}">Вперёд</a>
+                <a href="?{{ page_request_var }}={{ news_list.next_page_number }}{% if request.GET.search %}&q={{ request.GET.q }}{% endif %}">Вперёд</a>
             {% endif %}
         </span>
     </div>
