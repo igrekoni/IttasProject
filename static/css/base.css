@@ -1474,6 +1474,7 @@ div.canhelp h2{
 .group h2 {
     padding: 0 0 10px 0;
     font-weight: 300;
+    line-height: 35px;
 }
 
 .group table {
@@ -1839,4 +1840,14 @@ div.canhelp h2{
 
 .news-wrapper {
     margin-top: 100px;
+}
+
+.sertdkey img {
+    max-width: 340px;
+    margin: 0px 0 50px 0;
+    width: 100%;
+}
+
+.sertdkey {
+    text-align: center;
 }
