@@ -1,5 +1,4 @@
 from django.conf.urls import url, include
-from django.contrib import admin
 from .views import (
     news_list,
     news_create,
@@ -9,9 +8,9 @@ from .views import (
 )
 
 urlpatterns = [
-    url(r'^$', news_list),
-    url(r'^create/', news_create),
-    url(r'^(?P<id>\d+)/$', news_detail, name='news_detail'),
-    url(r'^(?P<id>\d+)/edit/', news_update, name='update'),
-    url(r'^delete/', news_delete),
+    url(r'^$', news_list, name="list"),
+    url(r'^create/$', news_create),
+    url(r'^(?P<slug>[\w-]+)/$', news_detail, name='news_detail'),
+    url(r'^(?P<slug>[\w-]+)/edit/$', news_update, name='update'),
+    url(r'^(?P<slug>[\w-]+)/delete/$', news_delete),
 ]

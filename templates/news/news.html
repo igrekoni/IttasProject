@@ -15,15 +15,10 @@
 <body>
 <div class="wrapper">
     {% include "menu.html" %}
+    {% include "news/messages.html" %}
 
-        <div class="col-md-8 col-md-offset-2 news-wrapper">
-            <h1>Добавить новость</h1>
-            <form method="post" action="">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <input type="submit" value="Создать" />
-            </form>
-        </div>
+        {% block content %}
+        {% endblock content %}
 
     {% include "footer.html" %}
 </div>
