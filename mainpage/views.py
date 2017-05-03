@@ -68,3 +68,8 @@ def razrabotka(request):
 def company(request):
 
     return render(request, "pages/o-kompanii.html", {})
+
+
+def vacancies(request):
+
+    return render(request, "pages/vacancies.html", {})

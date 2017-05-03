@@ -24,6 +24,8 @@ urlpatterns = [
     url(r'^company/soprovozhdenie-po/', views.soprovozhdenie, name='soprovozhdenie-po'),
     url(r'^company/razrabotka-programmnogo-obespecheniya/', views.razrabotka, name='razrabotka-programmnogo-obespecheniya'),
     url(r'^company/o-kompanii/', views.company, name='o-kompanii'),
+
+    url(r'^vacancies/', views.vacancies, name='vacancies'),
 ]
 
 if settings.DEBUG:

@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block head_title %}Ittas.by  - Разработка программного обеспечения и систем защиты под ключ{% endblock head_title%}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/base.css" %}" />
+    <link rel="stylesheet" href="{% static "css/responsive.css" %}" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+<div class="wrapper">
+    {% include "menu.html" %}
+    <div class="caption attestation">
+        <h1>Вакансии</h1>
+    </div>
+    <div class="row group group-lab group2 textdecor">
+        <div class="col-sm-6 col-sm-offset-3 " style="margin-top: 50px">
+            <div class="vacancies">
+                <h2>Испытательная лаборатория</h2>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <p>В настоящий момент в испытательной лаборатории открытых вакансий нет. Попробуйте поискать позднее.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vacancies2">
+                <h2>Отдел прикладной разработки</h2>
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <p>В настоящий момент в испытательной лаборатории открытых вакансий нет. Попробуйте поискать позднее.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vacancies2">
+                <h2>Отдел перспективных разработок</h2>
+                <button class="accordion">Инженер-программист микроконтроллеров</button>
+                <div class="panel">
+                    <div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 block ">
+                                <h4>Уровень зарплаты</h4>
+                                <p>по результатам собеседования</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 block ">
+                                <h4>Город</h4>
+                                <p>Минск, метро Спортивная</p>
+                            </div>
+                            <div class="col-md-4 col-sm-6 block ">
+                                <h4>Опыт работы</h4>
+                                <p>1-3 года</p>
+                            </div>
+                        </div>
+
+                        <br />
+                        <h4>Требования:</h4>
+                        <ul>
+                            <li> опыт (не менее 1 года) программирования микроконтроллеров на базе ядер MIPS (PIC32) или ARM (ARM7, ARM9, Cortex, SoC) или AVR (ATmega и др.) на языке программирования ANSI C (возможно C++);</li>
+                            <li> приветствуется навык отладки аналоговых и цифровых устройств на базе различных микроконтроллеров (MCU);</li>
+                            <li> приветствуется опыт работы с приводными интерфейсами связи: Ethertet LAN, USB (и его прикладными протоколами для классов CCID, MSC, RNDIS, VCP устройств) и иными;</li>
+                            <li> приветствуется знание основ работы с APDU (T0) протоколом для Smartcard (SIM карты, USB Token и т.п.), согласно ISO 7816-4;</li>
+                            <li> приветствуется знание отечественных алгоритмов шифрования/защиты (контроль целостности, подлинности) данных, согласно стандартам: ГОСТ 28147-89, СТБ 34.101.31-2011, СТБ П 34.101.45-2011;</li>
+                            <li> приветствуется навык разработки/программирования прикладного/системного ПО для отладки программ микроконтроллеров (любая ОС, любой инструмент разработки);</li>
+                            <li> владение английским языком на уровне чтения технической документации.</li>
+                        </ul>
+
+                        <br />
+                        <h4>Обязанности:</h4>
+                        <ul>
+                            <li> разработка и сопровождение программ на ANSI C для PIC32MX, C/C++ на ARM Cortex-M4, программирование микроконтроллеров;</li>
+                            <li> разработка и написание прикладных протоколов и программных обработчиков для интерфейсов Ethernet LAN (с использованием RMII), USB (с использованием ULPI), АЦП, SPI, I2C и др.</li>
+                        </ul>
+
+                        <br />
+                        <h4>Условия:</h4>
+                        <ul>
+                            <li> интересные проекты;</li>
+                            <li> достойная оплата труда (обсуждается индивидуально на собеседовании);</li>
+                            <li> дружный коллектив.</li>
+                        </ul>
+
+                        <br />
+                        <h4>Тип занятости</h4>
+                        <p>Полная занятость, полный день</p>
+                        <a href="mailto:info@ittas.by" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Не забудьте прикрепить к письму своё резюме">Отправить резюме</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "footer.html" %}
+</div>
+<!-- Скрипты -->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/static/js/common.js" />
+
+
+
+</body>
+</html>
