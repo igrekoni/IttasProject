@@ -3,14 +3,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ittas.by - сертификация средств защиты информации и программного обеспечения в Республике Беларусь" />
-    <title>{% block head_title %}Ittas.by  - Разработка программного обеспечения и систем защиты под ключ{% endblock head_title%}</title>
+    <title>Сертификация средств защиты информации | Ittas.by</title>
+    <meta name="description"  content="Услуги по сертификации программных и программно-аппаратных средств на соответствие требованиям ТР 2013/027/BY" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static "css/base.css" %}" />
     <link rel="stylesheet" href="{% static "css/responsive.css" %}" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
 </head>
 
 <body>
@@ -54,7 +55,9 @@
                     </div>
                 </div>-->
 
-                <ul>Подтверждению соответствия требованиям информационной безопасности Технического регламента путем сертификации подлежат средства защиты информации, которые будут использоваться для:
+                <p>Подтверждению соответствия требованиям информационной безопасности Технического регламента
+                    путем сертификации подлежат средства защиты информации, которые будут использоваться для:</p>
+                <ul>
                     <li>технической защиты государственных секретов;</li>
                     <li>создания систем защиты информации информационных систем, предназначенных для обработки информации, распространение и (или) предоставление которой ограничено;</li>
                     <li>создания систем безопасности критически важных объектов информатизации;</li>
@@ -63,8 +66,6 @@
 
                 <p>ООО «ИТТАС» оказывает услуги по проведению испытаний и подготовке комплекта документов для подачи заявки в орган по сертификации на соответствие Техническому регламенту.</p>
                 <p>Подготовка к сертификации на соответствие Техническому регламенту и соответствующие сертификационные испытания испытательной лабораторией ООО «ИТТАС» проводятся в составе работ, представленных в Таблице 1.</p>
-
-
 
                 <table class="table table-striped">
                     <tbody>
@@ -135,35 +136,31 @@
 <!-- ///////////////////// Slider ///////////////////////// -->
             <div class="col-sm-8 col-sm-offset-2 ">
                 <div class="customer-logos">
-                    <div class="slide"><img src="/static/images/vendors/cisco.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/cp.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/gis.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/ibm.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/imperva.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/kasper.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/pan.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/pt.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/rapid.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/rdp.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/sf.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/infowatch.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/ware.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/fortinet.png"></div>
-                    <div class="slide"><img src="/static/images/vendors/avanpost.png"></div>
+                    <div class="slide"><img src="/static/images/vendors/cisco.png" alt="cisco"></div>
+                    <div class="slide"><img src="/static/images/vendors/cp.png" alt="check point"></div>
+                    <div class="slide"><img src="/static/images/vendors/gis.png" alt="gis"></div>
+                    <div class="slide"><img src="/static/images/vendors/ibm.png" alt="ibm"></div>
+                    <div class="slide"><img src="/static/images/vendors/imperva.png" alt="imperva"></div>
+                    <div class="slide"><img src="/static/images/vendors/kasper.png" alt="kaspersky"></div>
+                    <div class="slide"><img src="/static/images/vendors/pan.png" alt="palo alto networks"></div>
+                    <div class="slide"><img src="/static/images/vendors/pt.png" alt="positive technologies"></div>
+                    <div class="slide"><img src="/static/images/vendors/rapid.png" alt="rapid7"></div>
+                    <div class="slide"><img src="/static/images/vendors/rdp.png" alt="rdp"></div>
+                    <div class="slide"><img src="/static/images/vendors/sf.png" alt="source fire"></div>
+                    <div class="slide"><img src="/static/images/vendors/infowatch.png" alt="infowatch"></div>
+                    <div class="slide"><img src="/static/images/vendors/ware.png" alt="vnware"></div>
+                    <div class="slide"><img src="/static/images/vendors/fortinet.png" alt="fortinet"></div>
+                    <div class="slide"><img src="/static/images/vendors/avanpost.png" alt="avanpost"></div>
                 </div>
             </div>
 
 <!--/////////////////// End Slider///////////////////////////// -->
         </div>
     </div>
-</div>
-
 
     {% include "footer.html" %}
 </div>
 <!-- Скрипты -->
-
-
 <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -203,7 +200,7 @@
 			});
 		});
 </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="/static/js/common.js" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

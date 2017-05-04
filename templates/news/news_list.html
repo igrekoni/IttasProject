@@ -12,9 +12,9 @@
                 <div class="thumbnail">
                     <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a> <small>{{ obj.publish }}</small> {% if obj.draft %}Черновик{% endif %}</h3>
                     {% if obj.image %}
-                        <img src="{{ obj.image.url }}" class="img-responsive" />
+                        <img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" />
                     {% endif %}
-                    <p>{{ obj.content|linebreaks|truncatewords:30 }}</p>
+                    {{ obj.content|linebreaks|truncatewords:30 }}
                     <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
                 </div>
 {#                <div class="row">#}
@@ -23,7 +23,6 @@
 {#                    <a href="https://twitter.com/home?status=I'm%20going%20to%20learn%20to%20Code...%20Come%20build%20an%20web%20apsp%20with%20me!%20%23CFE%20and%20@justinmitchel%20http://new.ittas.by{{ obj.get_absolute_url }}">Twitter</a>#}
 {#                </div>#}
             {% endfor %}
-
         </div>
     </div>
 

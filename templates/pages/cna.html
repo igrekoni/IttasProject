@@ -3,20 +3,22 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>{% block head_title %}Ittas.by  - Разработка программного обеспечения и систем защиты под ключ{% endblock head_title%}</title>
+    <title>CNA - устройство аппаратного шифрования канала | Ittas.by</title>
+    <meta name="description"  content="Внешняя сетевая карта с функцией аппаратного шифрования передаваемого трафика" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static "css/base.css" %}" />
     <link rel="stylesheet" href="{% static "css/responsive.css" %}" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}" type="image/x-icon">
 </head>
 
 <body>
 <div class="wrapper">
     {% include "menu.html" %}
         <div class="cna-header col-md-12">
-            <img src="/static/images/pages/cna.png"/>
+            <img src="/static/images/pages/cna.png" alt="CNA - устройство аппаратного шифрования канала"/>
         </div>
     <hr>
          <div class="content-wrapper">
@@ -32,7 +34,7 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="col-md-6">
-                        <p class="goods"><img src="/static/images/pages/cna-os.png"/></p>
+                        <p class="goods"><img src="/static/images/pages/cna-os.png" alt="Поддерживаемые ОС"/></p>
                         <p class="p-goods">совместимость co всеми основными ОС</p>
                     </div>
                     <div class="col-md-6">
@@ -45,8 +47,6 @@
                     </div>
                 </div>
             </div>
-
-
             <!-- <div class="row group"><h4 class="col-sm-12">Кому будет полезен</h4>
                 <div class="row"><div class="col-sm-2 col-sm-offset-1">
                     <ul>
@@ -73,7 +73,6 @@
                     </ul>
                 </div></div>
             </div> -->
-
             <div class="row group textdecor">
                 <h2 class="col-xs-10 col-xs-offset-1" style="text-align: center; margin-bottom: 20px;">Возможные схемы использования и подключения CNA</h2>
                 <div class="row">
@@ -93,9 +92,9 @@
                 </div>
                 <!-- ///////////////////// Slider ///////////////////////// -->
                   <div class="schemas">
-                      <div class="slide"><img src="/static/images/schemas/schema1.png"><br><br><p style="text-align: center">Схема соединения с помощью VPN двух офисов (организаций) и применением CNA внутри туннеля</p></div>
-                      <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
-                      <div class="slide"><img src="/static/images/schemas/schema1.png"></div>
+                      <div class="slide"><img src="/static/images/schemas/schema1.png" alt="Схема соединения с помощью VPN двух офисов (организаций) и применением CNA внутри туннеля"><br><br><p style="text-align: center">Схема соединения с помощью VPN двух офисов (организаций) и применением CNA внутри туннеля</p></div>
+                      <div class="slide"><img src="/static/images/schemas/schema1.png" alt="#"></div>
+                      <div class="slide"><img src="/static/images/schemas/schema1.png" alt="#"></div>
                   </div>
                 <!--/////////////////// End Slider///////////////////////////// -->
             </div>
@@ -106,7 +105,7 @@
                     <p class="text-reserve">В настоящий момент устройство имеет сертификат Оперативно-аналитического центра при Президенте Республики Беларусь №BY/112 02.01.036 00207 от 16.05.2016 на соответствие требованиям технического регламента ТР 2013/027/BY.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-1  col-md-5 col-md-offset-1">
-                    <a href="/static/files/cna.pdf" target="_blank"><img src="/static/images/pages/cna-cert.jpg"  /></a>
+                    <a href="/static/files/cna.pdf" target="_blank"><img src="/static/images/pages/cna-cert.jpg" alt="Сертификат соответсвия CNA" /></a>
                 </div></div>
             </div>
 
@@ -172,22 +171,7 @@
                     <button class="btn-company btn-company-yellow">ЗАКАЗАТЬ</button>
                 </div>
             </div>
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
     {% include "footer.html" %}
 </div>
 <!-- Скрипты -->
@@ -195,7 +179,6 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script>
     $(document).ready(function(){
@@ -220,15 +203,7 @@
 			});
 		});
 </script>
-
-
-
-
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="/static/js/common.js" />
-
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

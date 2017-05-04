@@ -1,7 +1,7 @@
 {% extends "news/news.html" %}
-{% block head_title %}
-    {{ instance.title }} | Ittas.by
-{% endblock head_title%}
+{% block head_title %}{{ instance.title }} | Ittas.by{% endblock head_title%}
+
+{% block head_description %}<!-- {{ instance.description }} --> | Ittas.by{% endblock head_description %}
 
 {% block content %}
     <div class="row group group-lab group2 textdecor">
@@ -11,7 +11,7 @@
                 <p>Автор: {{ instance.user.get_full_name }}</p>
             {% endif %}
             {% if instance.image %}
-                <img src="{{ instance.image.url }}" class="img-responsive" />
+                <img src="{{ instance.image.url }}" class="img-responsive" alt="{{ obj.title }}" />
             {% endif %}
             {{ instance.content|linebreaks }}
         </div>
