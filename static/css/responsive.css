@@ -45,6 +45,16 @@
     .make-reserve button {
     margin: -10px 25px 40px 60%;
     }
+    .cnainfo {
+        margin-top: 50px;
+    }
+    .p-goods {
+        font-size: 22px;
+        margin: 0;
+    }
+    .goods {
+        margin: -50px 0 -20px -11px;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .container {
