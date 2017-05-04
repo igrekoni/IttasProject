@@ -45,7 +45,7 @@
     .make-reserve button {
     margin: -10px 25px 40px 60%;
     }
-    .cnainfo {
+    .cnainfo, .scnainfo {
         margin-top: 50px;
     }
     .p-goods {
@@ -55,6 +55,13 @@
     .goods {
         margin: -50px 0 -20px -11px;
     }
+        .scnainfo .goods span {
+            font-size: 44px;
+        }
+        .scnainfo .goods{
+        font-size: 10vw !important;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .container {
@@ -110,6 +117,7 @@
     .make-reserve button {
     margin: -10px 25px 40px 70%;
     }
+
 }
 @media (min-width: 992px) and (max-width: 1200px){
     .confidence-hover p {
@@ -127,4 +135,19 @@
     .schemas .slick-slide img {
         width: 70%;
     }
+        .scnainfo .goods{
+        font-size: 5vw !important;
+    }
+        .scnainfo .goods span {
+            font-size: 44px;
+        }
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1900px) {
+    .scnainfo .goods{
+        font-size: 6.2vw !important;
+    }
+
 }
