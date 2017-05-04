@@ -11,7 +11,7 @@
                 <p>Автор: {{ instance.user.get_full_name }}</p>
             {% endif %}
             {% if instance.image %}
-                <img src="{{ instance.image.url }}" class="img-responsive" alt="{{ obj.title }}" />
+                <img src="{{ instance.image.url }}" class="img-responsive" alt="{{ instance.title }}" />
             {% endif %}
             {{ instance.content|linebreaks }}
         </div>

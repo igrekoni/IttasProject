@@ -14,7 +14,7 @@
                     {% if obj.image %}
                         <img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" />
                     {% endif %}
-                    {{ obj.content|linebreaks|truncatewords:30 }}
+                    {{ obj.preview|linebreaks }}
                     <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
                 </div>
 {#                <div class="row">#}

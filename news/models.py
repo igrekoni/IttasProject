@@ -20,6 +20,7 @@ def upload_location(instance, filename):
 class Post(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True)
     title = models.CharField(max_length=120)
+    preview = models.TextField(max_length=240)
     slug = models.SlugField(unique=True)
     image = models.ImageField(upload_to=upload_location,
                               null=True, blank=True,
