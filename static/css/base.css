@@ -1429,18 +1429,18 @@ div.canhelp h2{
 
 
 /*//////////////// SCNA PAGE ////////////////*/
-.scna-header {
+.scna-header, .cna-header {
     background: #fff;
 }
 
-.scna-header img {
+.scna-header img, .cna-header img {
     padding-top: 150px;
     width:100%;
 }
 
 .cna-header {
     padding-top: 100px;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
     width:100%;
     color: #1E2429;
 }

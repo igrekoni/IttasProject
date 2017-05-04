@@ -42,6 +42,9 @@
     .schemas .slick-slide img {
         width: 95%;
     }
+    .make-reserve button {
+    margin: -10px 25px 40px 60%;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .container {
@@ -93,6 +96,9 @@
     }
     .schemas .slick-slide img {
         width: 85%;
+    }
+    .make-reserve button {
+    margin: -10px 25px 40px 70%;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px){

@@ -19,20 +19,22 @@
     {% include "menu.html" %}
         <div class="cna-header col-md-12">
             <img src="/static/images/pages/cna.png" alt="CNA - устройство аппаратного шифрования канала"/>
+        <div class="cna-header col-xs-12">
+            <img src="/static/images/pages/cna.png"/>
         </div>
     <hr>
          <div class="content-wrapper">
-            <div class="row group">
+            <div class="row group textdecor">
                 <div class="col-md-8 col-md-offset-2 cna-h1 col-xs-10 col-xs-offset-1">
                     <h1>Устройство аппаратного шифрования сетевого трафика - CNA</h1>
                 </div>
-                <div class="col-sm-5 col-sm-offset-1">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <h2>Назначение CNA</h2>
                     <p>Основное назначение устройства – персональная внешняя сетевая карта с функцией шифрования передаваемого траффика. Устройство обеспечивает конфиденциальность и контроль целостности данных, передаваемых по открытым каналам связи.</p>
                     <p>Используются алгоритмы шифрования и контроля целостности в соответствии с межгосударственным стандартом ГОСТ 28147-89 и стандартами Республики Беларусь.</p>
                     <p>При необходимости устройства можно настроить для работы в режиме сетевого экрана, при котором устройство будет передавать или пропускать только те пакеты, формат которых будет задан специальными масками и\или адресами.</p>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-5 col-xs-10 col-xs-offset-1">
                     <div class="col-md-6">
                         <p class="goods"><img src="/static/images/pages/cna-os.png" alt="Поддерживаемые ОС"/></p>
                         <p class="p-goods">совместимость co всеми основными ОС</p>
@@ -47,6 +49,8 @@
                     </div>
                 </div>
             </div>
+
+
             <!-- <div class="row group"><h4 class="col-sm-12">Кому будет полезен</h4>
                 <div class="row"><div class="col-sm-2 col-sm-offset-1">
                     <ul>
@@ -73,6 +77,7 @@
                     </ul>
                 </div></div>
             </div> -->
+
             <div class="row group textdecor">
                 <h2 class="col-xs-10 col-xs-offset-1" style="text-align: center; margin-bottom: 20px;">Возможные схемы использования и подключения CNA</h2>
                 <div class="row">
@@ -171,7 +176,22 @@
                     <button class="btn-company btn-company-yellow">ЗАКАЗАТЬ</button>
                 </div>
             </div>
+
+
+
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
     {% include "footer.html" %}
 </div>
 <!-- Скрипты -->
@@ -179,6 +199,7 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script>
     $(document).ready(function(){
