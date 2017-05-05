@@ -1,7 +1,7 @@
 {% extends "news/news.html" %}
 {% block head_title %}{{ instance.title }} | Ittas.by{% endblock head_title%}
 
-{% block head_description %}<!-- {{ instance.description }} --> | Ittas.by{% endblock head_description %}
+{% block head_description %} {{ instance.preview }} | Ittas.by{% endblock head_description %}
 
 {% block content %}
     <div class="row group group-lab group2 textdecor">
