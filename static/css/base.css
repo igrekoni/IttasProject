@@ -1935,7 +1935,7 @@ div.panel.show {
     right: 0;
     bottom: 0;
     display: block;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
     height: 100px;
     padding: 0 0 0 30px !important;
 
@@ -1987,8 +1987,9 @@ div.panel.show {
     float: right;
 }
 .draft {
-    color: #feba0f;
-    position: absolute;
-    bottom: 5px;
-    right: 10px;
+    color:red;
+   
+}
+.full-news img {
+    margin-bottom: 20px;
 }

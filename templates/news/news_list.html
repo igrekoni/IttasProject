@@ -13,13 +13,13 @@
             {% for obj in news_list %}
                 <div class="thumbnail">
                 <div class="news-block">
-                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a>  {% if obj.draft %}<div class="draft">Черновик</div>{% endif %}</h3>
+                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a></h3>
                     {% if obj.image %}
                         <a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}"><img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" /></a>
                     {% endif %}
                 </div>
                     {{ obj.preview|linebreaks }}
-                <small>{{ obj.publish }}</small>
+                <small>{{ obj.publish }} {% if obj.draft %}<span class="draft">Черновик</span>{% endif %}</small>
 
                 </div>
 {#                <div class="row">#}
