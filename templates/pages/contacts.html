@@ -19,12 +19,21 @@
     {% include "menu.html" %}
     <div class="contacts">
         <h1>Свяжитесь с нами</h1>
-        <ul>
-                <li><span class="glyphicon glyphicon-map-marker"></span> Минск, ул. Одоевского, 115А, офис 287</li>
-                <li><span class="glyphicon glyphicon-phone"></span> +375 17 318-08-50</li>
-                <li><span class="glyphicon glyphicon-print"></span> +375 17 318-08-51</li>
-                <li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@ittas.by">info@ittas.by</a></li>
-            </ul>
+        <ul>{{ feedback.as_p }}
+            <li><span class="glyphicon glyphicon-map-marker"></span> Минск, ул. Одоевского, 115А, офис 287</li>
+            <li><span class="glyphicon glyphicon-phone"></span> +375 17 318-08-50</li>
+            <li><span class="glyphicon glyphicon-print"></span> +375 17 318-08-51</li>
+            <li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:info@ittas.by">info@ittas.by</a></li>
+        </ul>
+        <!-- форма начало -->
+        <div class="col-sm-8 col-sm-offset-2 " style="margin-top: 50px">
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" class="btn btn-default" value="Отправить" />
+            </form>
+        </div>
+        <!-- форма конец -->
     </div>
     <div id="map" style="height: 550px;"></div>
 

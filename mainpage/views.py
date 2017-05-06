@@ -1,5 +1,8 @@
-from django.shortcuts import render
+from django.core.mail import send_mail
+from django.http import BadHeaderError
+from django.shortcuts import render, HttpResponse
 from mainpage import utils
+from mainpage.forms import FeedbackForm
 
 
 def mainpage(request):
@@ -11,8 +14,22 @@ def mainpage(request):
 
 
 def contacts(request):
+    if request.method == 'POST':
+        feedback = FeedbackForm(request.POST)
+        if feedback.is_valid():
+            subject = feedback.cleaned_data['customer_name']
+            from_email = feedback.cleaned_data['email']
+            message = feedback.cleaned_data['form_message']
+            feedback.save()
+            try:
+                send_mail(subject, message, from_email, ['grechkoia@solit.by'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return render(request, 'base.html')
+    else:
+        feedback = FeedbackForm()
 
-    return render(request, "pages/contacts.html", {})
+    return render(request, "pages/contacts.html", {'form': feedback})
 
 
 def scna(request):
