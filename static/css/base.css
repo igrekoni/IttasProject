@@ -1953,7 +1953,7 @@ div.panel.show {
     position: absolute;
     top:20%;
 }
-.img-responsive, .thumbnail a>img {
+ .thumbnail a>img {
     width: 100%;
 }
 .news-block + p{

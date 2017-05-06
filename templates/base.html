@@ -47,20 +47,7 @@
      lifeLike: true
     });
 </script>
-<script>
-    $(function(){
-    $(".parent").hover(
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            },
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
-                $(this).toggleClass('open');
-                $('b', this).toggleClass("caret caret-up");
-            });
-    });</script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
