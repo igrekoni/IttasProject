@@ -1223,6 +1223,9 @@ div.canhelp h2{
     border: 4px solid #feba0f;
     color: #feba0f;
 }
+.btn-company-yellow-hr{
+    margin-left: 0;
+}
 .btn-company-yellow:after{
     background: #feba0f;
 }
