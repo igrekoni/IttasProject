@@ -12,11 +12,14 @@
 {#            </form>#}
             {% for obj in news_list %}
                 <div class="thumbnail">
-                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a> <small>{{ obj.publish }}</small> {% if obj.draft %}Черновик{% endif %}</h3>
+                <div class="news-block">
+                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a>  {% if obj.draft %}Черновик{% endif %}</h3>
                     {% if obj.image %}
                         <img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" />
                     {% endif %}
+                </div>
                     {{ obj.preview|linebreaks }}
+                <small>{{ obj.publish }}</small>
                     <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
                 </div>
 {#                <div class="row">#}
