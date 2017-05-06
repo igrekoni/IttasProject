@@ -3,8 +3,8 @@
 {% block head_description %}Новости мира информационной безопасности и компании ИТТАС{% endblock head_description %}
 
 {% block content %}
-    <div class="row group group-lab group2 textdecor">
-        <div class="col-sm-6 col-sm-offset-3 " style="margin-top: 50px">
+    <div class="row group group-news group2 textdecor">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1" style="margin-top: 50px">
 {# эта форма нихера не работает с юникодом. нужно поробовать через приведение к юникоду всех переменных решить этот косяк #}
 {#            <form method="get" action="">#}
 {#                <input type="text" name="search" placeholder="Поиск по новостям" value="{{ request.GET.search }}" />#}
@@ -13,14 +13,14 @@
             {% for obj in news_list %}
                 <div class="thumbnail">
                 <div class="news-block">
-                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a>  {% if obj.draft %}Черновик{% endif %}</h3>
+                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a>  {% if obj.draft %}<div class="draft">Черновик</div>{% endif %}</h3>
                     {% if obj.image %}
-                        <img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" />
+                        <a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}"><img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" /></a>
                     {% endif %}
                 </div>
                     {{ obj.preview|linebreaks }}
                 <small>{{ obj.publish }}</small>
-                    <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Подробнее</a></p>
+
                 </div>
 {#                <div class="row">#}
 {#                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://new.ittas.by{{ obj.get_absolute_url }}&title=Be%20first%20%7C%20Join%20Swift%20for%20Entrepreneurs&summary=Swift%20for%20Entrepreneurs%20is%20a%20project-based%20programming%20course%20for%20non-technical%20founders.%20We'll%20learn%20how%20to%20build%20iOS%20apps%20from%20scratch%20using%20Apple's%20new%20programming%20language:%20Swift.%20Be%20first%20and%20learn%20with%20me!&source=http://swiftforentrepreneurs.com/">Linkedin</a>#}

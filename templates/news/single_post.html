@@ -4,11 +4,11 @@
 {% block head_description %} {{ instance.preview }} | Ittas.by{% endblock head_description %}
 
 {% block content %}
-    <div class="row group group-lab group2 textdecor">
-        <div class="col-sm-6 col-sm-offset-3 " style="margin-top: 50px">
-            <h1>{{ instance.title }} <small>{% if instance.draft %}<span style="color: red">Черновик</span>{% endif %} {{ instance.publish }}</small></h1>
+    <div class="row group group-lab group2 textdecor full-news">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 " style="margin-top: 50px">
+            <h1>{{ instance.title }} </h1>
             {% if instance.user.get_full_name %}
-                <p>Автор: {{ instance.user.get_full_name }}</p>
+            <p>Автор: {{ instance.user.get_full_name }} <small>{% if instance.draft %}<span style="color: red">Черновик</span>{% endif %} {{ instance.publish }}</small></p>
             {% endif %}
             {% if instance.image %}
                 <img src="{{ instance.image.url }}" class="img-responsive" alt="{{ instance.title }}" />
