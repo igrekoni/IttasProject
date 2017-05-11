@@ -1805,9 +1805,9 @@ div.canhelp h2{
     display: inline-block;
     position: absolute;
     z-index: 1;
-    width: 35%;
-    margin-left: 10%;
-    height: 550px;
+    width: 45%;
+    /*margin-left: 10%;*/
+    height: 700px;
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -2001,9 +2001,10 @@ div.panel.show {
     width: 90%;
     margin: 0 auto;
 }
-.form form input {
-    background-color: rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.2);
+.form form #id_customer_name, .form form #id_email, .form form #id_form_message{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
     /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
@@ -2017,12 +2018,12 @@ div.panel.show {
     line-height: 18px
 }
 
-.form form input:focus {
+.form form #id_customer_name:focus, .form form #id_email:focus, .form form #id_form_message:focus {
     outline: 0;
-    border: 1px solid rgba(255,255,255,0.8);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    border-bottom: 2px solid rgba(255,255,255,0.8);
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);*/
 }
 .form form p {
     display: block;
@@ -2067,4 +2068,7 @@ div.panel.show {
 }
 .form .btn.btn-default:focus, .form .btn.btn-default:hover {
     color: #fff;
+}
+#id_form_message {
+    height: 160px;
 }
