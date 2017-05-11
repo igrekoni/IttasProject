@@ -15,5 +15,5 @@ class FeedbackForm(forms.ModelForm):
         widgets = {
             'customer_name': forms.TextInput(attrs={"placeholder": "Ваше имя"}),
             'email': forms.TextInput(attrs={"placeholder": "E-mail"}),
-            'form_message': forms.TextInput(attrs={"placeholder": "Сообщение"}),
+            'form_message': forms.Textarea(attrs={"placeholder": "Сообщение"}),
         }
