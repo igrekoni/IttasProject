@@ -19,7 +19,7 @@
                     {% endif %}
                 </div>
                     {{ obj.preview|linebreaks }}
-                <small>{{ obj.publish }} {% if obj.draft %}<span class="draft">Черновик</span>{% endif %}</small>
+                <small>{{ obj.publish }} {% if obj.draft %}<span class="draft">Черновик</span>{% endif %} || {% if obj.read_time <= 4 %}< 4 минут на прочтение{% else %}{{ obj.read_time }} минут на прочтение{% endif %}</small>
 
                 </div>
 {#                <div class="row">#}

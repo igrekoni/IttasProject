@@ -5,7 +5,6 @@ from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.utils import timezone
-
 from news.models import Post
 from .forms import PostForm
 
@@ -35,6 +34,7 @@ def news_detail(request, slug=None):
         "title": instance.title,
         "instance": instance,
     }
+
     return render(request, "news/single_post.html", context)
 
 
