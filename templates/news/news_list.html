@@ -12,21 +12,29 @@
 {#            </form>#}
             {% for obj in news_list %}
                 <div class="thumbnail">
-                <div class="news-block">
-                    <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a></h3>
-                    {% if obj.image %}
-                        <a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}"><img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" /></a>
-                    {% endif %}
-                </div>
-                    {{ obj.preview|linebreaks }}
-                <small>{{ obj.publish }} {% if obj.draft %}<span class="draft">Черновик</span>{% endif %} || {% if obj.read_time <= 4 %}< 4 минут на прочтение{% else %}{{ obj.read_time }} минут на прочтение{% endif %}</small>
+                    <div class="news-block">
+                        <h3><a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}">{{ obj.title }}</a></h3>
+                        {% if obj.image %}
+                            <a href="{{ obj.get_absolute_url }}" title="{{ obj.title }}"><img src="{{ obj.image.url }}" class="img-responsive" alt="{{ obj.title }}" /></a>
+                        {% endif %}
+                    </div>
+                        {{ obj.preview|linebreaks }}
+                    <small>{{ obj.publish }}{% if obj.draft %}, <span class="draft">Черновик</span>{% endif %},
+                        {% if obj.read_time == 1 %}
+                            <span class="clock"></span> 1 минута
+                        {% elif obj.read_time == 2 or obj.read_time == 3 or obj.read_time == 4 %}
+                            <span class="clock"></span> {{ obj.read_time }} минуты
+                        {% else %}
+                            <span class="clock"></span> {{ obj.read_time }} минут
+                        {% endif %}
+                    </small>
 
+                    <small>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://new.ittas.by{{ obj.get_absolute_url }}&title={{ obj.title }}&source=http://new.ittas.by{{ obj.get_absolute_url }}" target="_blank"><img src="/static/images/social/link.png" alt="Поделиться в LinkedIn" /></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://new.ittas.by{{ obj.get_absolute_url }}" target="_blank"><img src="/static/images/social/face.png" alt="Поделиться в Facebook" /></a>
+                        <a href="https://twitter.com/home?status={{ obj.title }}%20http://new.ittas.by{{ obj.get_absolute_url }}" target="_blank"><img src="/static/images/social/twi.png" alt="Поделиться в Twitter" /></a>
+                    </small>
                 </div>
-{#                <div class="row">#}
-{#                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://new.ittas.by{{ obj.get_absolute_url }}&title=Be%20first%20%7C%20Join%20Swift%20for%20Entrepreneurs&summary=Swift%20for%20Entrepreneurs%20is%20a%20project-based%20programming%20course%20for%20non-technical%20founders.%20We'll%20learn%20how%20to%20build%20iOS%20apps%20from%20scratch%20using%20Apple's%20new%20programming%20language:%20Swift.%20Be%20first%20and%20learn%20with%20me!&source=http://swiftforentrepreneurs.com/">Linkedin</a>#}
-{#                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://new.ittas.by{{ obj.get_absolute_url }}">Facebook</a>#}
-{#                    <a href="https://twitter.com/home?status=I'm%20going%20to%20learn%20to%20Code...%20Come%20build%20an%20web%20apsp%20with%20me!%20%23CFE%20and%20@justinmitchel%20http://new.ittas.by{{ obj.get_absolute_url }}">Twitter</a>#}
-{#                </div>#}
             {% endfor %}
         </div>
     </div>

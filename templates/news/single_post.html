@@ -8,11 +8,18 @@
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 " style="margin-top: 50px">
             <h1>{{ instance.title }} </h1>
             {% if instance.user.get_full_name %}
-            <p>Автор: {{ instance.user.get_full_name }} <small>{% if instance.draft %}<span style="color: red">Черновик</span>{% endif %} {{ instance.publish }}</small></p>
+                <p>Автор: {{ instance.user.get_full_name }} <small>{% if instance.draft %}<span style="color: red">Черновик</span>{% endif %} {{ instance.publish }}</small></p>
             {% endif %}
             {% if instance.image %}
                 <img src="{{ instance.image.url }}" class="img-responsive" alt="{{ instance.title }}" />
             {% endif %}
+
+            <small>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://new.ittas.by{{ instance.get_absolute_url }}&title={{ instance.title }}&source=http://new.ittas.by{{ instance.get_absolute_url }}" target="_blank"><img src="/static/images/social/linkedin.png" alt="Поделиться в LinkedIn" /></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://new.ittas.by{{ instance.get_absolute_url }}" target="_blank"><img src="/static/images/social/facebook.png" alt="Поделиться в Facebook" /></a>
+                <a href="https://twitter.com/home?status={{ instance.title }}%20http://new.ittas.by{{ instance.get_absolute_url }}" target="_blank"><img src="/static/images/social/twitter.png" alt="Поделиться в Twitter" /></a>
+            </small>
+
             {{ instance.content|linebreaks }}
         </div>
     </div>

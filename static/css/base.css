@@ -1522,6 +1522,7 @@ div.canhelp h2{
 .p-goods {
     font-size: 26px;
     margin-left: 20px;
+    text-align: left !important;
 }
 
 .goods span{
@@ -1579,7 +1580,7 @@ div.canhelp h2{
  /*z-index: 2000;*/
 }
 .caption::before{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   content: '';
   display: block;
   height: 100%;
@@ -1897,7 +1898,7 @@ button.accordion:hover {
 button.accordion:after {
   content: '\02795';
   font-size: 15px;
-    margin-top: 7px;
+  margin-top: 7px;
   color: #777;
   float: right;
   margin-left: 5px;
@@ -1966,9 +1967,15 @@ div.panel.show {
 }
 .thumbnail  small {
     padding-left: 30px;
-    font-size: 14px;
-    color: #929090;
+    font-size: 16px;
+    color: #888;
 }
+
+small a img {
+    height: 40px;
+    width: 120px;
+}
+
 .group-news {
     padding-top: 70px;
     padding-bottom: 0;
@@ -1991,7 +1998,6 @@ div.panel.show {
 }
 .draft {
     color:red;
-   
 }
 .full-news img {
     margin-bottom: 20px;
@@ -2066,9 +2072,19 @@ div.panel.show {
     margin: 20px 2%;
 
 }
+
 .form .btn.btn-default:focus, .form .btn.btn-default:hover {
     color: #fff;
 }
+
 #id_form_message {
     height: 160px;
+}
+
+.clock::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url("/static/images/icons/sandclock.png");
 }
