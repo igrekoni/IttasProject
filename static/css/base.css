@@ -2098,3 +2098,8 @@ small a img {
     display: inline-block;
     float: right;
 }
+
+.scnafunc h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
