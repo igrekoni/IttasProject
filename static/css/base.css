@@ -2088,3 +2088,13 @@ small a img {
     height: 15px;
     background-image: url("/static/images/icons/sandclock.png");
 }
+.social a img {
+    float: left;
+    height: 25px;
+    width: auto;
+    margin: 0 10px;
+}
+.social {
+    display: inline-block;
+    float: right;
+}
