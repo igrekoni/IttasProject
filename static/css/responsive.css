@@ -37,8 +37,10 @@
     }
     .contacts {
         margin-left: 0;
-        width: 55%;
+        width: 100%;
         font-size: 18px !important;
+        position: relative;
+        margin-bottom: -70px;
     }
     .sertcna img {
         margin: -20px 0 50px 0;
@@ -117,7 +119,7 @@
     }
     .contacts {
         margin-left: 0;
-        width: 45%;
+        width: 55%;
     }
     .sertcna img {
         margin: -20px 0 50px 0;
