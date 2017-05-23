@@ -2123,3 +2123,7 @@ small a img {
     left: 52%;
         margin-top: 50px;
 }
+.scnafunc .img-responsive img {
+    margin-top: 40px;
+    max-height:96px;
+}
